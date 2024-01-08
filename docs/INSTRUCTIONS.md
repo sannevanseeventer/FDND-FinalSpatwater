@@ -1,7 +1,7 @@
 
 # Let's JAM webapplicatie
 
-Ontwerp en ontwikkel een complexe, gebruiksvriendelijke en interactieve webapplicatie op basis van een bestaande api of een zelf in te richten headless CMS 
+Op naar de _release candidate_ voor jouw opdrachtgever. Ontwerp en ontwikkel een complexe, gebruiksvriendelijke en interactieve webapplicatie op basis van een bestaande api of een zelf in te richten headless CMS.
 
 ## Context
 
@@ -11,30 +11,28 @@ In het college _S18W1-01-Sprintplanning-Lets-JAM_ wordt de opdracht uitgelegd.
 
 ## Doel van deze opdracht
 
-In deze sprint ga je alles wat je dit semester hebt geleerd inzetten om een passende oplossing voor een case te realiseren. Het resultaat is een web applicatie op basis van data uit een bestaande API of een zelf in te richten API. Je maakt hierbij doelbewust keuzes voor het framework, de tooling en de workflow die je inzet.
+In semester 3 heb je veel geleerd over het inzetten van workflow, tools en frameworks om een passende oplossing voor een case te realiseren. Het resultaat is een web applicatie op basis van data uit een bestaande API of een zelf in te richten API. Deze laatste sprint neem je als team de tijd om de puntjes op de i te zetten en jullie beste werk te leveren. Je beste werk, niet alleen qua resultaat maar ook qua proces. Je zult bij het werken aan deze leertaak aandacht besteden aan die onderdelen die jij persoonlijk nog moet bewijzen.
 
 ## Werkwijze
 
 Deze opdracht gaat over alle fasen van de DLC **Analyseren**, **Ontwerpen**, **Bouwen**, **Testen** en **Integreren** 
 
-Doorloop de fasen van de DLC zoals je dat je de afgelopen anderhalf jaar hebt eigen gemaakt en documenteer je bevindingen in de README en de Wiki.
+Je werkt vanuit (gedocumenteerde) conventies, principes en code afspraken aan componenten. Je richt je daarbij eerst op de core functionaliteiten goed werkend krijgen en dan enhancen.
+
+Je werkt met branches en pull request requirements per component. Een component is pas _release candidate_ waardig als het uitvoerig getest is, denk aan usability, a11y, performance en responsiveness.
+
+Leg focus op het planbord, het in kaart brengen en toewijzen van taken. Maak daarbijn afspraken over het reviewen van code. Je controleert elkaars code in het pull request, een ander teamlid moet jouw code reviewen op code conventies, a11y, PE en responsive...
+
+Doorloop de fasen van de DLC zoals je dat je de afgelopen anderhalf jaar hebt eigen gemaakt en documenteer al jouw bevindingen in de README en de Wiki.
 
 ## Criteria
 
 Focus sprint 18 - De focus van deze sprint ligt op het ontwerpen en ontwikkelen van een complexe gebruiksvriendelijke interactieve toepassing voor het web
 
-Voor deze leertaak gelden de gedragscriteria voor sprint 18 Let's JAM
-* Methodisch handelen: Richt in overleg projecten in volgens de development-lifecycle
-* Samenwerken: Draagt verantwoording voor eigen resultaten, benoemt teamresultaten en informeert 
-* Communiceren: Kan ontwerpkeuzes, eigen ideeën en producten overtuigend overbrengen aan belanghebbenden
-* Lerend vermogen: Volgt aangeboden internationale ontwikkelingen in het vakgebied en maakt onder begeleiding keuzes over eigen ontwikkeling
-* Lerend vermogen: Kent eigen capaciteiten en beperkingen, waardeert het vermogen van anderen en maakt dit bespreekbaar.
-
-
 Deze opdracht is done als:
-- [ ] je hebt gewerkt volgens de verschillende fases van de development-lifecycle en je je werk hebt gedocumenteerd in de Readme en Wiki
+- [ ] je hebt gewerkt volgens de verschillende fases van de development-lifecycle
+- [ ] jouw werk is gedocumenteerd in de Readme en Wiki
 - [ ] je een complexe, gebruiksvriendelijke en interactieve webapplicatie hebt ontworpen en ontwikkeld
-- [ ] de webapplicatie een onderbouwde oplossing een voor een design challenge van een opdrachtgever biedt
-- [ ] de website op Github staat en een live url heeft
-
-
+- [ ] de site een onderbouwde oplossing een voor de design challenge van een opdrachtgever biedt
+- [ ] de site op Github staat en een live url heeft
+- [ ] de site _release candidate_ waardig is
