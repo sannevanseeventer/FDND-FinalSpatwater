@@ -1,33 +1,12 @@
-> _Fork_ deze leertaak en ga aan de slag. 
-Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
-De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# SPATwater 3.0
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+## Dit zijn de dingen die nog gedaan moeten worden: (Niet op volgorde)
 
-## Inhoudsopgave
-
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
-
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
-
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-
-## Installatie
-
-## Gebruik
-
-## Bronnen
-
-## Licentie
-
-This project is licensed under the terms of the [MIT license](./LICENSE).
+1. Email form werkend krijgen. (https://www.youtube.com/watch?v=qa-Sh0iM-kM&list=WL&index=3&t=137s&ab_channel=WebJeda)
+2. Static site generation naar github pages. (https://kit.svelte.dev/docs/adapter-static) Alles onder het kopje Usage is al gedaan.
+3. Filteren op de all-posts in de kennisbank.
+4. Kunnen scrollen op projecten in de sidebar van de kaart.
+5. Opmaak van de slug pagina's. (detail pages)
+6. De afbeeldingen in de footer moeten veel kleiner worden. Ik denk namelijk dat de performance daarom slecht is.
+7. Gekke afbeelding bug van bRAIN oplossen als de gebruiker terug komt van /projecten.
+8. Nog eens goed kijken of we componenten volgens atomic design kunnen opsplitsen.
