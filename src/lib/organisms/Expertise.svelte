@@ -118,8 +118,7 @@
 
     .card-item:hover {
         transform: translateY(-0.5rem);
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-        box-shadow: inset 0px 0px 0px 2px var(--green);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 18px 50px -10px;
     }
 
     .card-item:hover a {
@@ -159,7 +158,7 @@
     }
 
     .active {
-        box-shadow: inset 0px 0px 0px 2px var(--green);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     }
 
     /* Mobiele weergaven */
