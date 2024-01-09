@@ -17,7 +17,7 @@
         L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',).addTo(map);
 
         var kansIcon = L.icon({
-            iconUrl: '/assets/star-svgrepo-com.png',
+            iconUrl: '/assets/brightness-svgrepo-com.png',
             iconSize: [32, 32],
             iconAnchor: [16, 32],
         });

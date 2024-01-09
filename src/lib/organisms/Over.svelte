@@ -57,6 +57,8 @@
   img {
     object-fit: contain;
     height: 20rem;
+    margin: 0;
+    width: 100%;
   }
 
   /* Mobiele weergaven */

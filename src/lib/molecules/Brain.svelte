@@ -13,7 +13,7 @@
           <a class="green-link" href="/projecten">Bekijk onze projecten</a>
         </div>
         <div class="image-container">
-          <img src={item.image.url} alt="" loading="lazy"/>
+          <img class="border-radius-img" src={item.image.url} alt="" loading="lazy"/>
         </div>
       </div>
     </div>
