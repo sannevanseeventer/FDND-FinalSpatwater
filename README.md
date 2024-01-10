@@ -8,5 +8,10 @@
 4. Kunnen scrollen op projecten in de sidebar van de kaart.
 5. Opmaak van de slug pagina's. (detail pages)
 6. De afbeeldingen in de footer moeten veel kleiner worden. Ik denk namelijk dat de performance daarom slecht is.
-7. Gekke afbeelding bug van bRAIN oplossen als de gebruiker terug komt van /projecten.
+7. ~Gekke afbeelding bug van bRAIN oplossen als de gebruiker terug komt van /projecten.~
 8. Nog eens goed kijken of we componenten volgens atomic design kunnen opsplitsen.
+9. Contrast knop
+10. ~Teamcanvas~
+11. ~Data kansenkaart hygraph~
+12. Aside kansenkaart vullen
+13. Darkmode functie
