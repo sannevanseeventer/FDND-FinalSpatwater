@@ -1,4 +1,5 @@
 <script>
+  export let data;
   import Kansenkaart from "$lib/organisms/Kansenkaart.svelte";
 </script>
 
@@ -7,5 +8,5 @@
 </svelte:head>
 
 <main>
-  <Kansenkaart />
+  <Kansenkaart {data} />
 </main>

@@ -1,5 +1,11 @@
 <script>
     export let data;
+
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+
+    });
 </script>
 
 <div class="project-list-container">
@@ -28,7 +34,7 @@
 <style>
     /* Styling of project list */
     .project-list-container {
-        height: 65vh;
+        height: calc(65vh - 1rem);
         overflow-y: scroll;
         overflow-x: hidden;
         /* padding-right: .5rem; */

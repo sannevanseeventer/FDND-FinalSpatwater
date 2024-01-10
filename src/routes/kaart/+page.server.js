@@ -1,24 +1,26 @@
-// import { gql } from 'graphql-request'
-// import { hygraph } from '$lib/utils/hygraph.js'
+import { gql } from 'graphql-request'
+import { hygraph } from '$lib/utils/hygraph.js'
 
-// export async function load() {
-//   let query = gql`
-//     query SPATquery {
-//       projectens {
-//         categorie
-//         createdAt
-//         intro
-//         plaats {
-//           latitude
-//           longitude
-//         }
-//         image {
-//           url
-//         }
-//         title
-//         slug
-//       }
-//   `; 
+export async function load() {
+  let query = gql`
+    query kaart {
+        kansenkaarts {
+        geometry
+        kWaarde
+        location {
+            latitude
+            longitude
+        }
+        meerDanHonderdvijftig
+        minderDanVijfentwintig
+        slug
+        title
+        vijftigVijfenzeventig
+        vijfenzegentigHonderd
+        honderdHonderdvijftig
+        }
+    }
+  `; 
   
-//   return await hygraph.request(query)
-// }
+  return await hygraph.request(query)
+}
