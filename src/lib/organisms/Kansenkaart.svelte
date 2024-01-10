@@ -4,6 +4,8 @@
   import MapMenu from "../molecules/MapMenu.svelte";
   import MapAside from "../molecules/MapAside.svelte";
 
+  console.log("test")
+
   onMount(() => {
     // Setting up map
     var map = L.map("map", {
