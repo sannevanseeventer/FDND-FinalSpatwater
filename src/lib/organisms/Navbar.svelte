@@ -1,4 +1,18 @@
 <!--==================== NAVIGATION ====================-->
+<script>
+  export let data;
+
+  import { onMount } from "svelte";
+  onMount(() => {
+    const button = document.querySelector(".contrast-toggle");
+
+    button.addEventListener("click", (e) => {
+      button.classList.toggle("is-toggled");
+      document.body.classList.toggle("is-high-contrast");
+    });
+  });
+</script>
+
 <nav>
   <div class="navbar-container">
     <a href="/">
@@ -17,6 +31,11 @@
       <li><a href="/projecten">Projecten</a></li>
       <li><a href="/kaart">Kansenkaart</a></li>
       <li><a href="/#contact"><span>Contact</span></a></li>
+      <li>
+        <button class="contrast-toggle">
+          <span>Toggle contrast</span>
+        </button>
+      </li>
     </ul>
   </div>
 </nav>
@@ -24,6 +43,7 @@
 <style>
   :global(:has(.navbar-container)) {
     container-type: inline-size;
+    background-color: var(--lg-bg);
   }
 
   /* Navigation */
@@ -136,6 +156,47 @@
     top: 0;
   }
 
+  .contrast-toggle {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 2em;
+    height: 2em;
+    margin: 2em auto;
+    margin-right: 2em;
+    background: var(--white);
+    border: 0.1em solid var(--lg-bg);
+    border-radius: 50%;
+    box-shadow: 0 0 0.5em 0.7em var(--darkgrey);
+    cursor: pointer;
+    transform: translateZ(0);
+  }
+
+  .contrast-toggle > span {
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  .contrast-toggle::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: currentColor;
+    transform: translateX(-50%);
+    transition: transform 0.2s cubic-bezier(1, 1, 0, 1.3);
+  }
+
+  .contrast-toggle.is-toggled::before {
+    transform: translateX(50%);
+  }
   /* 48em = 768px */
   @container (min-width: 900px) {
     nav li {
