@@ -1,8 +1,5 @@
 <script>
-    import Grot from "../molecules/Grot.svelte";
-
-    
-
+  import Grot from "../molecules/Grot.svelte";
 </script>
 
 <!--==================== FOOTER ====================-->
@@ -81,12 +78,12 @@
   }
 
   h3 {
-    color: white;
+    color: var(--white);
     font-size: 1rem;
   }
 
   p {
-    color: white;
+    color: var(--white);
     font-size: 1rem;
   }
 
@@ -105,7 +102,7 @@
   li,
   a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
     cursor: pointer;
   }
 
@@ -132,7 +129,7 @@
 
   .line {
     height: 2px;
-    background-color: white;
+    background-color: var(--white);
     width: 80%;
     margin-bottom: 4rem;
     align-self: center;
@@ -146,7 +143,7 @@
     bottom: 0rem;
     margin-bottom: 1rem;
     left: 10%;
-    color: white;
+    color: var(--white);
     font-size: 1rem;
     z-index: 2;
   }
@@ -156,7 +153,7 @@
     bottom: 0rem;
     margin-bottom: 1rem;
     right: 10%;
-    color: white;
+    color: var(--white);
     font-size: 1rem;
     z-index: 2;
   }

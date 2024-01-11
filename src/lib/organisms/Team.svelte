@@ -18,9 +18,11 @@
     {#each data.teams as item}
       <!-- svelte-ignore a11y-no-static-element-interactions -->
       <div
-        id="{item.name}"
+        id={item.name}
         class="card-item"
-        style="background-image: url('{hoveredItem === item ? item.imageHover.url : item.image.url}');"
+        style="background-image: url('{hoveredItem === item
+          ? item.imageHover.url
+          : item.image.url}');"
         on:mouseenter={() => handleMouseEnter(item)}
         on:mouseleave={handleMouseLeave}
       >
@@ -33,45 +35,44 @@
   </div>
 </section>
 
-
 <style>
   section {
-      width: 70%;
-      margin-left: 15%;
-      margin-top: 4rem;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 4rem;
   }
 
   .inner-section {
-      display: flex;
-      justify-content: space-between;
-      gap: 8vw;
-      margin: 2rem 0rem 6rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 8vw;
+    margin: 2rem 0rem 6rem 0rem;
   }
 
   .card-item {
-      background-color: #fafafa;
-      width: 100%;
-      border-radius: 1rem;
-      cursor: pointer;
-      transition: 0.2s;
-      position: relative;
-      height: 25rem;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+    background-color: var(--lg-bg);
+    width: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .card-item:hover {
-      transform: translateY(-0.5rem);
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    transform: translateY(-0.5rem);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
   }
 
   .card-text {
-      position: absolute;
-      bottom: 0;
-      padding: 1rem;
-      color: #fafafa;
-      text-shadow: 0px 0px 5px #333;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    color: var(--lg-bg);
+    text-shadow: 0px 0px 5px #333;
   }
 
   h3 {
@@ -80,8 +81,8 @@
 
   /* Mobiele weergaven */
   @media only screen and (max-width: 1100px) {
-      .inner-section {
-          flex-direction: column;
-      }
+    .inner-section {
+      flex-direction: column;
+    }
   }
 </style>
