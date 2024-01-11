@@ -143,11 +143,11 @@
         margin-bottom: 0.5rem;
     }
 
-    .home-scroll {
+    /* .home-scroll {
         color: var(--green);
         font-size: 0.8em;
         text-decoration: none;
-    }
+    } */
 
     /* PARALLAX */
     .parallax2 {
@@ -186,9 +186,9 @@
             font-size: 1.4em;
         }
 
-        .home-scroll {
+        /* .home-scroll {
             font-size: 1.2em;
-        }
+        } */
 
         #text {
             padding-left: 1rem;
@@ -210,9 +210,9 @@
             font-size: 1.7em;
         }
 
-        .home-scroll {
+        /* .home-scroll {
             font-size: 1.4em;
-        }
+        } */
 
         .parallax {
             margin-top: -5rem;
@@ -230,9 +230,9 @@
             margin-top: -14.3em;
         }
 
-        .home-scroll {
+        /* .home-scroll {
             font-size: 1.4em;
-        }
+        } */
 
         .parallax {
             height: 95rem;
@@ -321,10 +321,10 @@
             margin-top: -15em;
         }
 
-        .home-scroll2 {
+        /* .home-scroll2 {
             color: var(--green);
             font-size: 1em;
-        }
+        } */
     }
 
     @media screen and (min-width: 1250px) {

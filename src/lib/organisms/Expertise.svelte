@@ -74,7 +74,7 @@
                 <div class="card-text">
                     <h3>{item.title}</h3>
                     <p>{item.intro}</p>
-                    <a href="#{item.slug}" class="green-link full">Meer weten?</a>
+                    <a href="#{item.slug}" class="green-link full">Meer informatie</a>
                 </div>
             </div>
         {/each}
@@ -108,6 +108,7 @@
 
     .card-item {
         background-color: #fafafa;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 18px 30px -10px;
         width: 100%;
         padding: 1rem 0rem 0rem 0rem;
         border-radius: 1rem;
@@ -118,14 +119,14 @@
 
     .card-item:hover {
         transform: translateY(-0.5rem);
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 18px 50px -10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 18px 30px -10px;
     }
 
     .card-item:hover a {
-        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 110px 0px;
     }
 
-    /* Ik weet nog niet hoe ik me over deze voel... */
+    /* Card hover */
     .card-item:hover img {
         transform: rotate(2deg);
     }
@@ -139,7 +140,7 @@
     }
 
     .card-text {
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     h3 {
@@ -158,7 +159,7 @@
     }
 
     .active {
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 30px -10px;
     }
 
     /* Mobiele weergaven */
