@@ -1,0 +1,27 @@
+{
+	"/": [
+		"src/routes/+page.server.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"/kaart": [
+		"src/routes/kaart/+page.server.js",
+		"src/routes/+layout.js"
+	],
+	"/kennisbank": [
+		"src/routes/kennisbank/+page.server.js",
+		"src/routes/+layout.js"
+	],
+	"/kennisbank/[slug]": [
+		"src/routes/kennisbank/[slug]/+page.server.js",
+		"src/routes/+layout.js"
+	],
+	"/projecten": [
+		"src/routes/projecten/+page.server.js",
+		"src/routes/+layout.js"
+	],
+	"/projecten/[slug]": [
+		"src/routes/projecten/[slug]/+page.server.js",
+		"src/routes/+layout.js"
+	]
+}

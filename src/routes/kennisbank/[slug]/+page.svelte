@@ -14,17 +14,25 @@
       <div class="content-container">
         <a href="/kennisbank"
           ><p>
-            <i class="fa fa-arrow-left" aria-hidden="true"></i> Terug
+            <i class="fa fa-arrow-left" aria-hidden="true"></i> Terug naar kennisbank
           </p></a
         >
-        <img
-          class="project-banner-img"
-          src={data.kennisbank.image.url}
-          alt={data.kennisbank.title} loading="lazy"/>
 
-        <span>{data.kennisbank.categorie}</span>
-        <h1>{data.kennisbank.title}</h1>
+        <div class="container">
+          <div class="Image">
+            <img
+            class="project-banner-img"
+            src={data.kennisbank.image.url}
+            alt={data.kennisbank.title} loading="lazy"/>
 
+            <div class="Labels">
+              <span>{data.kennisbank.categorie}</span>
+            </div>
+          </div>
+
+   
+        <div class="Text">
+          <h1>{data.kennisbank.title}</h1>
         <div class="project-html">
           {@html data.kennisbank.content.html}
         </div>
@@ -34,6 +42,10 @@
             <i class="fa fa-arrow-left" aria-hidden="true"></i> Terug
           </p></a
         >
+      </div>
+
+        
+        </div>
 
         <!-- <h2>Gerelateerde kennisbank</h2> -->
       </div>
@@ -51,17 +63,16 @@
   }
 
   .content-container {
-    width: 50%;
-    margin-left: 25%;
+    width: 90%;
+    margin-left: 10%;
     margin-bottom: 10rem;
   }
 
   .project-banner-img {
-    width: 100%;
+    width: 90%;
     height: 25rem;
     object-fit: cover;
     border-radius: 0.5rem;
-    margin-bottom: 0.1rem;
   }
 
   :global(img) {
@@ -119,8 +130,10 @@
 
   h1 {
     color: #7faec5;
-    margin-bottom: 0.5rem;
-    font-size: 1.6rem;
+    padding: 2rem;
+    font-size: 2rem;
+    width: 100%;
+    margin: 4rem auto;
   }
 
   /* h2 {
@@ -130,11 +143,30 @@
 
   .project-html {
     color: #2b3f5a;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
     line-height: 1.2rem;
     margin-bottom: 2rem;
   }
+
+  .container {  
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Text Image"
+    "Text Image"
+    "Text Labels";
+}
+
+.Image { grid-area: Image; }
+
+.Text { grid-area: Text; }
+
+.Labels { grid-area: Labels; }
+
 
   /* Mobiele weergaven */
   @media only screen and (max-width: 1100px) {
