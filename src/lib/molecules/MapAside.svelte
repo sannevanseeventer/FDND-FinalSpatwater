@@ -18,7 +18,7 @@
                     <p>75-100:</p>
                     <p>100-150:</p>
                     <p>&#62;150cm:</p>
-                    <p>Geometry:</p>a
+                    <p>Geometry:</p>
                 </div>
 
                 <div class="extra-info-values">
