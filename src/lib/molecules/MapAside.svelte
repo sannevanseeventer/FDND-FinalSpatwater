@@ -8,17 +8,17 @@
             <span class="hide" id="hide">Verbergen</span>
             <h2 id="infoTitle">[naam]</h2>
 
-            <p class="no-margin-bot">Extra informatie</p>
+            <p id="info" class="no-margin-bot">Extra informatie</p>
             <div class="extra-info-container">
                 <div class="extra-info-titles">
                     <p>K-Waarde:</p>
-                    <p>50-75:</p>
                     <p>&#60;25cm:</p>
                     <p>25-50:</p>
+                    <p>50-75:</p>
                     <p>75-100:</p>
                     <p>100-150:</p>
                     <p>&#62;150cm:</p>
-                    <p>Geometry:</p>
+                    <p>Geometry:</p>a
                 </div>
 
                 <div class="extra-info-values">
@@ -79,6 +79,8 @@
     .no-margin-bot {
         margin-bottom: 0;
         margin-top: 1rem;
+        padding-bottom: .5rem;
+        font-size: .8rem;
     }
 
     .extra-info-container {

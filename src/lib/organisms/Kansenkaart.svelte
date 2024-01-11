@@ -26,8 +26,9 @@
     // Reference to the info panel and its content area
     const infoPanel = document.getElementById("infoPanel");
     const infoContent = document.getElementById("infoContent");
-
     const infoTitle = document.getElementById("infoTitle");
+
+    const info = document.getElementById("info");
 
     const value0 = document.getElementById("value0");
     const value1 = document.getElementById("value1");
@@ -54,27 +55,9 @@
         }
       ).addTo(map);
 
-      // Reference to the info panel and its content area
-      const infoPanel = document.getElementById("infoPanel");
-      const infoContent = document.getElementById("infoContent");
-
-      // Function to update the panel content based on marker data
-      function updateInfoPanel(feature) {
-        infoTitle.innerHTML = `${feature.title}`;
-
-        // value0.innerHTML = `${feature.properties.Naam}`;
-        // value1.innerHTML = `${feature.properties.Naam}`;
-        // value2.innerHTML = `${feature.properties.Naam}`;
-        // value3.innerHTML = `${feature.properties.Naam}`;
-        // value4.innerHTML = `${feature.properties.Naam}`;
-        // value5.innerHTML = `${feature.properties.Naam}`;
-        // value6.innerHTML = `${feature.properties.Naam}`;
-        // value7.innerHTML = `${feature.properties.Naam}`;
-      }
-
       // Event listener for marker click
       marker.on("click", function () {
-        updateInfoPanel(feature);
+        updateInfoPanel(kans);
         infoPanel.style.display = "block";
       });
     });
@@ -93,17 +76,17 @@
         const location = this.getAttribute("data-location");
 
         if (location === "amsterdam") {
-          // Change the map view for Utrecht
+          // Change the map view for Amsterdam
           map.setView([52.3547418, 4.8215606], 12);
         }
 
         if (location === "den-haag") {
-          // Change the map view for Utrecht
+          // Change the map view for Den Haag
           map.setView([52.071731, 4.2274685], 12);
         }
 
         if (location === "rotterdam") {
-          // Change the map view for Utrecht
+          // Change the map view for Rotterdam
           map.setView([51.9280632, 4.4084283], 12);
         }
 
@@ -113,6 +96,23 @@
         }
       });
     });
+
+    // Function to update the panel content based on marker data
+    function updateInfoPanel(selectedKans) {
+      infoTitle.innerHTML = `${selectedKans.title}`;
+
+      info.innerHTML = `${selectedKans.info}`
+
+      value0.innerHTML = `${selectedKans.kWaarde}`
+      value1.innerHTML = `${selectedKans.minderDanVijfentwintig}`
+      value2.innerHTML = `${selectedKans.vijfentwintigVijftig}`
+      value3.innerHTML = `${selectedKans.vijftigVijfenzeventig}`
+      value4.innerHTML = `${selectedKans.vijfenzegentigHonderd}`
+      value5.innerHTML = `${selectedKans.honderdHonderdvijftig}`
+      value6.innerHTML = `${selectedKans.meerDanHonderdvijftig}`
+      value7.innerHTML = `${selectedKans.geometry}`
+      // Update other values as needed
+    }
   });
 </script>
 

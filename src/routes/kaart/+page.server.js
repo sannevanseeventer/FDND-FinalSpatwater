@@ -17,6 +17,8 @@ export async function load() {
         title
         vijftigVijfenzeventig
         vijfenzegentigHonderd
+        vijfentwintigVijftig
+        info
         honderdHonderdvijftig
         }
     }
