@@ -27,6 +27,7 @@
 
             <div class="Labels">
               <span>{data.kennisbank.categorie}</span>
+              <div class="author">Door {data.kennisbank.author} op {data.kennisbank.date}</div>
             </div>
           </div>
 
@@ -123,9 +124,17 @@
   }
 
   span {
-    color: #2b3f5a;
+    color: white;
     font-weight: 600;
     font-size: 0.9rem;
+    background-color: #4ecd5d;
+    padding: .2rem .5rem;
+    border-radius: 20px;
+  }
+
+  .author{
+    font-size: .9rem;
+    color: var(--darkblue)
   }
 
   h1 {
@@ -165,7 +174,13 @@
 
 .Text { grid-area: Text; }
 
-.Labels { grid-area: Labels; }
+.Labels { 
+  grid-area: Labels; 
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
 
 
   /* Mobiele weergaven */
