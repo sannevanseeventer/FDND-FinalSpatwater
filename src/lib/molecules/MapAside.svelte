@@ -74,6 +74,7 @@
 
     h2 {
         color: var(--spat);
+        font-size: 1rem;
     }
 
     .no-margin-bot {
