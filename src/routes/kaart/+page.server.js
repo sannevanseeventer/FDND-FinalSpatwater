@@ -4,7 +4,7 @@ import { hygraph } from '$lib/utils/hygraph.js'
 export async function load() {
   let query = gql`
     query kaart {
-        kansenkaarts {
+        kansenkaarts(first: 100) {
         geometry
         kWaarde
         location {
