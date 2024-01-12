@@ -1,5 +1,36 @@
-import { gql } from 'graphql-request'
-import { hygraph } from '$lib/utils/hygraph.js'
+import { gql } from "graphql-request";
+import { hygraph } from "$lib/utils/hygraph.js";
+
+// import { json } from "@sveltejs/kit";
+// import { render } from "svelte-email";
+// import Contact from "../lib/organisms/Contact.svelte";
+// import nodemailer from "nodemailer";
+
+// const transporter = nodemailer.createTransport({
+//   host: "smtp.ethereal.email",
+//   port: 587,
+//   secure: false,
+//   auth: {
+//     user: "my_user",
+//     pass: "my_password",
+//   },
+// });
+
+// const emailHtml = render({
+//   component: Contact,
+//   props: {
+//     name: "Svelte",
+//   },
+// });
+
+// const options = {
+//   from: "you@example.com",
+//   to: "maaike.verplancke@hotmail.com",
+//   subject: "hello world",
+//   html: emailHtml,
+// };
+
+// transporter.sendMail(options);
 
 export async function load() {
   let query = gql`
@@ -88,7 +119,5 @@ export async function load() {
     }
   `;
 
-
-
-  return await hygraph.request(query)
+  return await hygraph.request(query);
 }

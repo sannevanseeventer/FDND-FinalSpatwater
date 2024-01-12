@@ -71,12 +71,13 @@
     position: absolute;
     bottom: 0;
     padding: 1rem;
-    color: var(--lg-bg);
+    color: white;
     text-shadow: 0px 0px 5px #333;
   }
 
   h3 {
     font-size: 1.5rem;
+    color: white;
   }
 
   /* Mobiele weergaven */

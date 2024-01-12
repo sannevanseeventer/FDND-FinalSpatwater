@@ -78,12 +78,12 @@
   }
 
   h3 {
-    color: var(--white);
+    color: var(--darkgrey);
     font-size: 1rem;
   }
 
   p {
-    color: var(--white);
+    color: var(--darkgrey);
     font-size: 1rem;
   }
 
@@ -102,7 +102,7 @@
   li,
   a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--darkgrey);
     cursor: pointer;
   }
 

@@ -3,9 +3,21 @@
   import ContactInfo from "../molecules/ContactInfo.svelte";
   import Formulier from "../molecules/Formulier.svelte";
 
+  // import { Button, Hr, Html, Text } from "svelte-email";
+
+  // export let name = "World";
 </script>
 
 <!--==================== CONTACT ====================-->
+<!-- 
+<Html lang="en">
+  <Text>
+    Hello, {name}!
+  </Text>
+  <Hr />
+  <Button href="https://svelte.dev">Visit Svelte</Button>
+</Html> -->
+
 <section>
   <div class="inner-section">
     <h2 id="contact">Contact</h2>
@@ -16,6 +28,7 @@
       <div class="text-container">
         <ContactInfo {data} />
       </div>
+      <!-- <p class="success">{form?.success || ""}</p> -->
     </div>
   </div>
 </section>
@@ -53,6 +66,7 @@
 
   .text-container {
     width: 100%;
+    color: var(--darkblue);
   }
 
   /* Mobiele weergaven */

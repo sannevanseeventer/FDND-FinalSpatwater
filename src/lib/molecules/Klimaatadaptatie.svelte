@@ -13,9 +13,15 @@
           <a class="green-link" href="/projecten">Bekijk onze projecten</a>
         </div>
         <div class="image-container">
-          <img src={item.image.url} alt="" loading="lazy"/>
+          <img src={item.image.url} alt="" loading="lazy" />
         </div>
       </div>
     </div>
   </section>
 {/each}
+
+<style>
+  .climate-container p {
+    color: var(--darkblue);
+  }
+</style>

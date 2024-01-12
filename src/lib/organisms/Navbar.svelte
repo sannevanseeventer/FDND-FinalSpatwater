@@ -163,15 +163,13 @@
     width: 2em;
     height: 2em;
     margin: 2em auto;
-    margin-right: 2em;
     background: var(--white);
     border: 0.1em solid var(--lg-bg);
     border-radius: 50%;
-    box-shadow: 0 0 0.5em 0.7em var(--darkgrey);
+    box-shadow: 0 0 1.5em 0.5em var(--darkgrey);
     cursor: pointer;
     transform: translateZ(0);
   }
-
   .contrast-toggle > span {
     clip: rect(1px, 1px, 1px, 1px);
     width: 1px;
@@ -189,7 +187,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: currentColor;
+    background: var(--darkblue);
     transform: translateX(-50%);
     transition: transform 0.2s cubic-bezier(1, 1, 0, 1.3);
   }
@@ -197,6 +195,7 @@
   .contrast-toggle.is-toggled::before {
     transform: translateX(50%);
   }
+
   /* 48em = 768px */
   @container (min-width: 900px) {
     nav li {
@@ -221,6 +220,10 @@
     nav .logo {
       width: 8rem;
       margin-top: 0.7rem;
+    }
+
+    .contrast-toggle {
+      margin-right: 2em;
     }
   }
 </style>

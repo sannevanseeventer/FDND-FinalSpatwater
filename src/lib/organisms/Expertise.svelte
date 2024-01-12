@@ -145,11 +145,13 @@
   h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
+    color: var(--darkblue);
   }
 
   p {
     font-size: 0.8rem;
     height: 4rem;
+    color: var(--darkblue);
   }
 
   .full {
@@ -160,6 +162,7 @@
   .active {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
   }
+
 
   /* Mobiele weergaven */
   @media only screen and (max-width: 1100px) {
