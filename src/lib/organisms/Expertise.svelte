@@ -149,7 +149,7 @@
 
     p {
         font-size: .8rem;
-        height: 4rem;
+        height: 6rem;
     }
 
     .full {
@@ -161,6 +161,10 @@
         box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     }
 
+    a {
+        min-width: 100%;
+    }
+
     /* Mobiele weergaven */
     @media only screen and (max-width: 1100px) {
         .inner-section {
@@ -169,7 +173,15 @@
         }
 
         img {
-            display: none;
+            position: absolute;
+            right: 0;
+            margin-left: 0;
+            margin-right: 4rem;
+            height: 5rem;
+            width: 5rem;
+            transform: rotate(3deg);
+            margin-top: -2rem;
+            display: block;
         }
 
         .full {
@@ -178,7 +190,6 @@
 
         p {
             font-size: .9rem;
-            height: 2rem;
         }
     }
 </style>
