@@ -118,7 +118,7 @@
 
   section {
     height: 100vh;
-    background-color: #30343a;
+    background-color: #2f435c;
     position: relative;
   }
 
@@ -128,6 +128,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
+    height: max-content;
+    padding-bottom: 10rem;
   }
 
   .line {
