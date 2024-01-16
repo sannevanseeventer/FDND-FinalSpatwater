@@ -13,6 +13,7 @@
         src={partner.image.url}
         alt="logo's partners"
         class="sponsor-img"
+        loading="lazy" width="100px" height="100px"
       /></a
     >
   {/each}

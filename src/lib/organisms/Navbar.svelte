@@ -2,7 +2,7 @@
 <nav>
     <div class="navbar-container">
         <a href="/">
-            <img class="logo" src="/assets/logotest2.png" alt="logo spatwater" />
+            <img class="logo" src="/assets/logotest2.png" alt="logo spatwater" loading="lazy" width="100px" height="100px"/>
         </a>
 
         <input class="menu-button" type="checkbox" id="menu-button" />
@@ -35,7 +35,7 @@
         box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
         position: fixed;
         width: 100vw;
-        z-index: 99999;
+        z-index: 999;
     }
 
     nav ul {

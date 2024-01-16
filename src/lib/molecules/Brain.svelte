@@ -1,5 +1,6 @@
 <script>
   export let data;
+
 </script>
 
 <!--==================== BRAIN ====================-->
@@ -13,7 +14,7 @@
           <a class="green-link" href="/projecten">Bekijk onze projecten</a>
         </div>
         <div class="image-container">
-          <img class="border-radius-img" src={item.image.url} alt="" loading="lazy"/>
+          <img class="border-radius-img" src={item.image.url} alt="Foto Illustratie" loading="lazy"width="100px" height="100px"/>
         </div>
       </div>
     </div>

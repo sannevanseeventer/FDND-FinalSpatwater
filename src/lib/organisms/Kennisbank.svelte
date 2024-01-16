@@ -17,7 +17,7 @@
       <article class="highlighted-post-1 post">
         {#if data.kennisbanks.length > 0}
           <a href="/kennisbank/{lastPost1.slug}">
-            <img src={lastPost1.image.url} alt="" />
+            <img src={lastPost1.image.url} alt="Foto illustratie" loading="lazy" width="100px" height="100px"/>
             <div class="post-text">
               <div class="post-info">
                 <span class="{lastPost3.categorie} category-label"
@@ -38,7 +38,7 @@
         <article class="highlighted-posts-small post">
           {#if data.kennisbanks.length > 0}
             <a href="/kennisbank/{lastPost2.slug}">
-              <img src={lastPost2.image.url} alt="" />
+              <img src={lastPost2.image.url} alt="Foto illustratie" loading="lazy" width="100px" height="100px" />
               <div class="post-text">
                 <div class="post-info">
                   <span class="{lastPost2.categorie} category-label"
@@ -57,7 +57,7 @@
         <article class="highlighted-posts-small post">
           {#if data.kennisbanks.length > 0}
             <a href="/kennisbank/{lastPost3.slug}">
-              <img src={lastPost3.image.url} alt="" />
+              <img src={lastPost3.image.url} alt="Foto illustratie" loading="lazy" width="100px" height="100px" />
               <div class="post-text">
                 <div class="post-info">
                   <span class="{lastPost3.categorie} category-label"

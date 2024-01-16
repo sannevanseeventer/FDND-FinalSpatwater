@@ -7,7 +7,7 @@
     <li class="post {item.categorie}">
         <a href="/kennisbank/{item.slug}">
             <div class="horizontal-flex-row">
-                <img src={item.image.url} alt="boom illustratie" loading="lazy"/>
+                <img src={item.image.url} alt="boom illustratie" loading="lazy" width="100px" height="100px"/>
                 <div class="post-text">
                     <div class="post-info">
                         <span class="{item.categorie} category-label">{item.categorie}</span>

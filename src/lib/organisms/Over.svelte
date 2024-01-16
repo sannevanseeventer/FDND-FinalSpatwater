@@ -13,7 +13,7 @@
           <a class="green-link" href="/kennisbank">Bekijk onze blog pagina</a>
         </div>
         <div class="image-container">
-          <img src={item.image.url} alt="boom illustratie" loading="lazy"/>
+          <img src={item.image.url} alt="boom illustratie" loading="lazy" width="100px" height="100px"/>
         </div>
       </div>
     </div>

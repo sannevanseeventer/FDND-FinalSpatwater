@@ -50,13 +50,13 @@
 <main>
     <section class="home" id="home">
         <section class="parallax">
-            <img src="assets/city.png" id="city" alt="city illustratie" />
-            <img src="assets/water.png" id="water" alt="water illustratie" />
-            <img src="assets/berg4.png" id="layer1" alt="berg illustratie" />
-            <img src="assets/berg3.png" id="layer2" alt="berg illustratie" />
-            <img src="assets/berg2.png" id="layer3" alt="berg illustratie" />
-            <img src="assets/huis.png" id="layer4" alt="huis illustratie" />
-            <img src="assets/bergje1.png" id="layer5" alt="berg illustratie" />
+            <img src="assets/city.png" id="city" alt="city illustratie" loading="lazy"/>
+            <img src="assets/water.png" id="water" alt="water illustratie" loading="lazy"/>
+            <img src="assets/berg4.png" id="layer1" alt="berg illustratie" loading="lazy"/>
+            <img src="assets/berg3.png" id="layer2" alt="berg illustratie" loading="lazy"/>
+            <img src="assets/berg2.png" id="layer3" alt="berg illustratie" loading="lazy"/>
+            <img src="assets/huis.png" id="layer4" alt="huis illustratie" loading="lazy"/>
+            <img src="assets/bergje1.png" id="layer5" alt="berg illustratie" loading="lazy" />
             <div id="text">
                 <h1 class="home-title">Een nieuwe generatie hydrologen</h1>
                 <h2>
@@ -67,41 +67,48 @@
                 src="assets/grondmobilee.png"
                 id="ground"
                 alt="grond illustratie"
+                loading="lazy"
             />
-            <img src="assets/bird.png" id="bird" alt="vogel illustratie" />
+            <img src="assets/bird.png" id="bird" alt="vogel illustratie" loading="lazy"/>
         </section>
 
         <section class="parallax2">
-            <img src="assets/city-full.png" id="city2" alt="city illustratie" />
+            <img src="assets/city-full.png" id="city2" alt="city illustratie" loading="lazy"/>
             <img
                 src="assets/water-full.png"
                 id="water2"
                 alt="water illustratie"
+                loading="lazy"
             />
             <img
                 src="assets/berg4-full.png"
                 id="layer1-2"
                 alt="berg illustratie"
+                loading="lazy"
             />
             <img
                 src="assets/berg3-full.png"
                 id="layer2-2"
                 alt="berg illustratie"
+                loading="lazy"
             />
             <img
                 src="assets/berg2-full.png"
                 id="layer3-2"
                 alt="berg illustratie"
+                loading="lazy"
             />
             <img
                 src="assets/huisje-full.png"
                 id="layer4-2"
                 alt="huis illustratie"
+                loading="lazy"
             />
             <img
                 src="assets/berg1-full.png"
                 id="layer5-2"
                 alt="berg illustratie"
+                loading="lazy"
             />
             <div id="text2">
                 <h1 class="home-title2">Een nieuwe generatie hydrologen</h1>
@@ -111,11 +118,13 @@
                 src="assets/backgroundfullfinall.png"
                 id="ground2"
                 alt="grond illustratie"
+                loading="lazy"
             />
             <img
                 src="assets/bird-full.png"
                 id="bird2"
                 alt="vogel illustratie"
+                loading="lazy"
             />
         </section>
     </section>

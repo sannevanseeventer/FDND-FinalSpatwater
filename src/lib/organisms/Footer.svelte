@@ -80,11 +80,7 @@ h2 {
   font-size: 1.3rem;
 }
 
-h3 {
-  color: white;
-  font-size: 1rem;
-}
-
+h3,
 p {
   color: white;
   font-size: 1rem;
@@ -116,69 +112,73 @@ a:focus {
   border-radius: 0.2em;
 }
 
-section {
+.container {
   height: 70vh;
   background-color: #30343a;
   position: relative;
-}
-
-.container {
-  padding: 1.5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   position: relative;
 }
 
+
 .line {
   height: 2px;
   background-color: white;
   width: 80%;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   align-self: center;
   position: absolute;
   bottom: 0;
   z-index: 1;
 }
 
- .address {
+.address,
+.copyright {
   position: absolute;
-  bottom: 0rem;
-  margin-bottom: 2rem;
-  left: 10%;
-  color: white;
+  bottom: 0.5rem;
   font-size: 1rem;
+  color: white;
   z-index: 2;
 }
 
-.copyright {
-  position: absolute;
-  bottom: 0rem;
-  margin-bottom: 2rem;
-  right: 10%;
-  color: white;
-  font-size: 1rem;
-  z-index: 2;
-} 
+.address {
+  left: 10%;
+}
 
+.copyright {
+  right: 10%;
+}
 
 @media screen and (min-width: 750px) {
-  h2 {
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
-  }
-  section {
-    height: 60vh;
-  }
-  .container {
-    flex-direction: row;
-  }
-  
-  li {
-    margin-bottom: 0.5rem;
-  }
-  .line {
-    margin-bottom: 2rem;
-  }
+
+
+.container {
+  height: 45vh;
+  flex-direction: row;
+  /* align-items: baseline; Center items horizontally */
+}
+
+.line {
+  width: 80%; /* Adjusted width for larger screens */
+  margin-bottom:3rem ; /* No margin at the bottom for larger screens */
+}
+
+.address,
+.copyright {
+  margin-bottom: 0; /* No margin at the bottom for larger screens */
+}
+
+.address {
+  left: auto;
+  right: 10%; /* Adjusted right position for larger screens */
+}
+
+.copyright {
+  right: auto;
+  left: 10%; /* Adjusted left position for larger screens */
+}
 }
 </style>

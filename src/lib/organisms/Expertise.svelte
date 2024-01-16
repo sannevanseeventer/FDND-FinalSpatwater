@@ -4,6 +4,8 @@
     import Waterkwaliteit from "../molecules/Waterkwaliteit.svelte";
     import Klimaatadaptatie from "../molecules/Klimaatadaptatie.svelte";
     import Brain from "../molecules/Brain.svelte";
+    
+
 
     import { onMount } from "svelte";
 
@@ -70,6 +72,9 @@
                     src="{item.image.url}"
                     alt="Illustratie waterkwaliteit en milieubehoud"
                     class="card-img"
+                    loading="lazy"
+                    width="100px" 
+                    height="100px"
                 />
                 <div class="card-text">
                     <h3>{item.title}</h3>
