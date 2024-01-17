@@ -174,15 +174,7 @@
         }
 
         img {
-            position: absolute;
-            right: 0;
-            margin-left: 0;
-            margin-right: 4rem;
-            height: 5rem;
-            width: 5rem;
-            transform: rotate(3deg);
-            margin-top: -2rem;
-            display: block;
+            display: none;
         }
 
         .full {
@@ -191,6 +183,7 @@
 
         p {
             font-size: .9rem;
+            height: 4.5rem;
         }
     }
 </style>
