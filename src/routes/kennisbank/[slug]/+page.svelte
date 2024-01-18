@@ -64,13 +64,13 @@
   }
 
   .content-container {
-    width: 90%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 15%;
     margin-bottom: 10rem;
   }
 
   .project-banner-img {
-    width: 90%;
+    width: 100%;
     height: 25rem;
     object-fit: cover;
     border-radius: 0.5rem;
