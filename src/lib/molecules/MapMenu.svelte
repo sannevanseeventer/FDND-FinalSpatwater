@@ -42,22 +42,23 @@
     }); 
 </script>
 
-<div id="map-menu" class="map-menu">
+<div id="map-menu" class="map-menu" aria-label="Kaartenmenu">
     <div class="text-block">
         <h1>Kansenkaart</h1>
-        <p id="menu-text">Kleine regel tekst met uitleg over de kaart</p>
+        <p id="menu-text" aria-label="Uitleg over de kaart">Kleine regel tekst met uitleg over de kaart</p>
     </div>
     <div class="action-block">
-        <p id="min" class="menu-icon">Verbergen</p>
-        <p id="plus" class="menu-icon">Opties</p>
-        <ul id="menu-list">
-            <li data-location="utrecht">Utrecht</li>
-            <li data-location="rotterdam">Rotterdam</li>
-            <li data-location="den-haag">Den-Haag</li>
-            <li class="active" data-location="amsterdam">Amsterdam</li>
+        <p id="min" class="menu-icon" aria-label="Verbergen">Verbergen</p>
+        <p id="plus" class="menu-icon" aria-label="Opties">Opties</p>
+        <ul id="menu-list" aria-label="Lijst met locaties">
+            <li data-location="utrecht" aria-label="Utrecht">Utrecht</li>
+            <li data-location="rotterdam" aria-label="Rotterdam">Rotterdam</li>
+            <li data-location="den-haag" aria-label="Den-Haag">Den-Haag</li>
+            <li class="active" data-location="amsterdam" aria-label="Amsterdam">Amsterdam</li>
         </ul>
     </div>
 </div>
+
 
 <style>
     .map-menu {

@@ -2,24 +2,25 @@
     export let data;
 </script>
   
-<ul class="project-list" id="project-list">
-{#each data.kennisbanks as item}
-    <li class="post {item.categorie}">
+<ul class="project-list" id="project-list" aria-label="Lijst van kennisbankartikelen">
+    {#each data.kennisbanks as item}
+      <li class="post {item.categorie}" aria-label="{item.title} artikel">
         <a href="/kennisbank/{item.slug}">
-            <div class="horizontal-flex-row">
-                <img src={item.image.url} alt="boom illustratie" loading="lazy" width="100px" height="100px"/>
-                <div class="post-text">
-                    <div class="post-info">
-                        <span class="{item.categorie} category-label">{item.categorie}</span>
-                        <span class="author">Door {item.author} op {item.date}</span>
-                    </div>
-                    <h3 id="over">{item.title}</h3>
-                </div>
+          <div class="horizontal-flex-row">
+            <img src={item.image.url} alt="boom illustratie" loading="lazy" width="100px" height="100px" aria-label="{item.title} afbeelding"/>
+            <div class="post-text">
+              <div class="post-info">
+                <span class="{item.categorie} category-label" aria-label="{item.categorie} categorie">{item.categorie}</span>
+                <span class="author" aria-label="Auteur: {item.author}, Datum: {item.date}">Door {item.author} op {item.date}</span>
+              </div>
+              <h3 id="over" aria-label="{item.title} titel">{item.title}</h3>
             </div>
+          </div>
         </a>
-    </li>
-{/each}
-</ul>
+      </li>
+    {/each}
+  </ul>
+  
   
 <style>
     .post {

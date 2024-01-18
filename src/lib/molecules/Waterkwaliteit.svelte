@@ -10,7 +10,7 @@
         <div class="text-container arrow-list">
           <h2 id="waterkwaliteit">{item.title}</h2>
           <p>{@html item.content.html}</p>
-          <a class="green-link" href="/projecten">Bekijk onze projecten</a>
+          <a class="green-link" href="/kennisbank" aria-label="Bekijk onze blog pagina">Bekijk onze blog pagina</a>
         </div>
         <div class="image-container">
           <img src={item.image.url} alt="Foto Illustratie" loading="lazy"width="100px" height="100px"/>

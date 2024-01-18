@@ -1,5 +1,5 @@
 <!--==================== NAVIGATION ====================-->
-<nav>
+<nav aria-label="Site Navigation">
     <div class="navbar-container">
         <a href="/">
             <img class="logo" src="/assets/logotest2.png" alt="logo spatwater" loading="lazy" width="100px" height="100px"/>
@@ -11,16 +11,17 @@
         >
 
         <ul class="menu">
-            <li><a href="/#over">Over</a></li>
-            <li><a href="/#expertise">Expertise</a></li>
-            <li><a href="/#team">Team</a></li>
-            <li><a href="/kennisbank">Kennisbank</a></li>
-            <li><a href="/projecten">Projecten</a></li>
-            <li><a href="/kaart">Kansenkaart</a></li>
-            <li><a href="/#contact"><span>Contact</span></a></li>
+            <li><a href="/#over" aria-label="Over">Over</a></li>
+            <li><a href="/#expertise" aria-label="Expertise">Expertise</a></li>
+            <li><a href="/#team" aria-label="Team">Team</a></li>
+            <li><a href="/kennisbank" aria-label="Kennisbank">Kennisbank</a></li>
+            <li><a href="/projecten" aria-label="Projecten">Projecten</a></li>
+            <li><a href="/kaart" aria-label="Kansenkaart">Kansenkaart</a></li>
+            <li><a href="/#contact" aria-label="Contact"><span>Contact</span></a></li>
         </ul>
     </div>
 </nav>
+
 
 <style>
     :global(:has(.navbar-container)) {

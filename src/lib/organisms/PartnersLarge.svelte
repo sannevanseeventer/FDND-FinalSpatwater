@@ -3,8 +3,8 @@
 </script>
 
 <!--==================== PARTNERS ====================-->
-<section>
-  <h2>Partners</h2>
+<section aria-labelledby="partners-heading">
+  <h2 id="partners-heading">Partners</h2>
   <p>
     Partners vormen de kern van onze aanpak. Door nauwe samenwerking met
     overheidsinstanties, bedrijven en onderzoeksinstituten ontwikkelen we
@@ -17,13 +17,14 @@
   <div class="inner-section">
     {#each data.partner as partner}
       <div class="card-item">
-        <a href={partner.link}>
+        <a href={partner.link} aria-label={`Meer informatie over de partner: ${partner.name}`}>
           <div class="partner-image" style="background-image: url('{partner.image.url}')"></div>
         </a>
       </div>
     {/each}
   </div>
 </section>
+
 
 <style>
   section {

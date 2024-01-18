@@ -14,6 +14,8 @@
         alt="logo's partners"
         class="sponsor-img"
         loading="lazy" width="100px" height="100px"
+        aria-label={`Logo van ${partner.name}`}
+
       /></a
     >
   {/each}

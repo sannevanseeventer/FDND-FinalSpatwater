@@ -10,7 +10,7 @@
         <div class="text-container">
           <h2 id="over">{item.title}</h2>
           <p>{@html item.content.html}</p>
-          <a class="green-link" href="/kennisbank">Bekijk onze blog pagina</a>
+          <a class="green-link" href="/kennisbank" aria-label="Bekijk onze blog pagina">Bekijk onze blog pagina</a>
         </div>
         <div class="image-container">
           <img src={item.image.url} alt="boom illustratie" loading="lazy" width="100px" height="100px"/>
@@ -19,6 +19,7 @@
     </div>
   </section>
 {/each}
+
 
 <style>
   section {

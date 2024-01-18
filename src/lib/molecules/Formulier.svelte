@@ -40,7 +40,7 @@
 </script>
 
 <!--==================== CONTACT FORM ====================-->
-<form on:submit={handleSubmit}>
+<form on:submit={handleSubmit} aria-label="Contactformulier">
     <label for="name">Naam</label>
     <input
         class="field"
@@ -49,6 +49,7 @@
         id="name"
         name="name"
         required
+        aria-label="Naam"
     />
 
     <label for="email">E-mail</label>
@@ -59,6 +60,7 @@
         id="email"
         name="email"
         required
+        aria-label="E-mail"
     />
 
     <label for="subject">Onderwerp</label>
@@ -69,6 +71,7 @@
         id="subject"
         name="subject"
         required
+        aria-label="Onderwerp"
     />
 
     <label for="message">Bericht</label>
@@ -79,10 +82,12 @@
         name="message"
         rows="10"
         required
+        aria-label="Bericht"
     />
 
-    <input class="green-link no-border" type="submit" value="Versturen" />
+    <input class="green-link no-border" type="submit" value="Versturen" aria-label="Versturen knop" />
 </form>
+
 
 <style>
     form {

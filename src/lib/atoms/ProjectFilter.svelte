@@ -36,12 +36,13 @@
     });
 </script>
 
-<ul class="filter-list">
-    <li class="active" data-category="all">Alles</li>
-    <li data-category="Klimaatadaptatie">Klimaatadaptatie</li>
-    <li data-category="Waterkwaliteit">Waterkwaliteit</li>
-    <li data-category="bRAIN">bRAIN</li>
-</ul>
+<ul class="filter-list" aria-label="Filterlijst voor kennisbankartikelen">
+    <li class="active" data-category="all" aria-label="Alle categorieën, momenteel actief">Alles</li>
+    <li data-category="Klimaatadaptatie" aria-label="Filter op Klimaatadaptatie categorie">Klimaatadaptatie</li>
+    <li data-category="Waterkwaliteit" aria-label="Filter op Waterkwaliteit categorie">Waterkwaliteit</li>
+    <li data-category="bRAIN" aria-label="Filter op bRAIN categorie">bRAIN</li>
+  </ul>
+  
 
 <style>
     .filter-list {

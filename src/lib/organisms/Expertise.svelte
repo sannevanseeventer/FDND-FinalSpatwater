@@ -75,6 +75,8 @@
                     loading="lazy"
                     width="100px" 
                     height="100px"
+                    aria-label="{item.title} illustratie"
+
                 />
                 <div class="card-text">
                     <h3>{item.title}</h3>

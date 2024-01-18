@@ -141,7 +141,7 @@ a:focus {
   bottom: 0.5rem;
   font-size: 1rem;
   color: white;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .address {
