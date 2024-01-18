@@ -2,10 +2,6 @@
   export let data;
   import ContactInfo from "../molecules/ContactInfo.svelte";
   import Formulier from "../molecules/Formulier.svelte";
-
-  // import { Button, Hr, Html, Text } from "svelte-email";
-
-  // export let name = "World";
 </script>
 
 <!--==================== CONTACT ====================-->
@@ -28,7 +24,15 @@
       <div class="text-container">
         <ContactInfo {data} />
       </div>
+
+      <!-- <input type="text" name="name" required />
+      <input type="email" name="email" required />
+      <textarea name="message" required></textarea>
+      <div class="h-captcha" data-captcha="true"></div>
+      <button type="submit">Submit Form</button> -->
+
       <!-- <p class="success">{form?.success || ""}</p> -->
+      <!-- </div> -->
     </div>
   </div>
 </section>
