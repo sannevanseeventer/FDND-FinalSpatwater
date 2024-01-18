@@ -1,6 +1,8 @@
 <script>
   export let data;
 
+  console.log(data)
+
   import Footer from "$lib/organisms/Footer.svelte";
 </script>
 
@@ -12,43 +14,34 @@
   {#if data.kennisbank}
     {#if data.kennisbank.image && data.kennisbank.image.url}
       <div class="content-container">
-        <a href="/kennisbank"
-          ><p>
-            <i class="fa fa-arrow-left" aria-hidden="true"></i> Terug naar kennisbank
-          </p></a
-        >
-
-        <div class="container">
-          <div class="Image">
-            <img
-            class="project-banner-img"
-            src={data.kennisbank.image.url}
-            alt={data.kennisbank.title} loading="lazy"/>
-
-            <div class="Labels">
-              <span>{data.kennisbank.categorie}</span>
-              <div class="author">Door {data.kennisbank.author} op {data.kennisbank.date}</div>
-            </div>
-          </div>
-
-   
-        <div class="Text">
+        <a href="/kennisbank"><p><i class="fa fa-arrow-left" aria-hidden="true"></i> Terug naar kennisbank</p></a>
+        <div class="header-image" style="background-image: url({data.kennisbank.image.url});">
           <h1>{data.kennisbank.title}</h1>
-        <div class="project-html">
-          {@html data.kennisbank.content.html}
         </div>
-
-        <a href="/kennisbank"
-          ><p>
-            <i class="fa fa-arrow-left" aria-hidden="true"></i> Terug
-          </p></a
-        >
-      </div>
-
-        
+        <div class="horizontal-flex-row">
+          <div class="post-text">
+            {@html data.kennisbank.content.html}
+          </div>
+          <div class="post-info">
+            <div class="info-row">
+              <div class="author">Door {data.kennisbank.author} op {data.kennisbank.date}</div>
+              <span class="{data.kennisbank.categorie}">{data.kennisbank.categorie}</span>
+            </div>
+            <!-- Display other posts -->
+            {#if data.kennisbank.otherPosts && data.kennisbank.otherPosts.length > 0}
+              <div class="other-posts">
+                <h2>Other Posts</h2>
+                <ul>
+                  {#each data.kennisbank.otherPosts as post}
+                    <li><a href={`/kennisbank/${post.slug}`}>{post.title}</a></li>
+                  {/each}
+                </ul>
+              </div>
+            {:else}
+              <p>Geen gerelateerde artikelen gevonden.</p>
+            {/if}
+          </div>
         </div>
-
-        <!-- <h2>Gerelateerde kennisbank</h2> -->
       </div>
     {/if}
   {:else}
@@ -63,17 +56,57 @@
     width: 100%;
   }
 
+  span {
+    padding: .2rem .4rem;
+    border-radius: .5rem;
+    font-size: .6rem !important;
+  }
+
   .content-container {
-    width: 70%;
-    margin-left: 15%;
+    width: 60%;
+    margin-left: 20%;
     margin-bottom: 10rem;
   }
 
-  .project-banner-img {
+  .horizontal-flex-row {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .post-text {
+    width: 70%;
+  }
+
+  .post-info {
+    width: 30%;
+  }
+
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .header-image {
+    height: 16rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 25rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    position: absolute;
+    color: #fafafa;
+    text-shadow: 0px 0px 10px #000;
+    font-size: 2rem;
+    width: 100%;
+    bottom: 0;
+    padding: .2rem .5rem;
   }
 
   :global(img) {
@@ -123,65 +156,10 @@
     margin-top: 1rem;
   }
 
-  span {
-    color: white;
-    font-weight: 600;
-    font-size: 0.9rem;
-    background-color: #4ecd5d;
-    padding: .2rem .5rem;
-    border-radius: 20px;
-  }
-
   .author{
     font-size: .9rem;
     color: var(--darkblue)
   }
-
-  h1 {
-    color: #7faec5;
-    padding: 2rem;
-    font-size: 2rem;
-    width: 100%;
-    margin: 4rem auto;
-  }
-
-  /* h2 {
-      color: #7FAEC5;
-      margin-bottom: .5rem;
-    } */
-
-  .project-html {
-    color: #2b3f5a;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    line-height: 1.2rem;
-    margin-bottom: 2rem;
-  }
-
-  .container {  
-    display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1rem;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "Text Image"
-    "Text Image"
-    "Text Labels";
-}
-
-.Image { grid-area: Image; }
-
-.Text { grid-area: Text; }
-
-.Labels { 
-  grid-area: Labels; 
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: 1rem;
-}
-
 
   /* Mobiele weergaven */
   @media only screen and (max-width: 1100px) {
@@ -190,9 +168,16 @@
       margin-left: 5%;
     }
 
-    .project-banner-img {
+    .horizontal-flex-row {
+      flex-direction: column;
+    }
+
+    .post-text {
       width: 100%;
-      height: 20rem;
+    }
+
+    .post-info {
+      width: 100%;
     }
   }
 </style>

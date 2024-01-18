@@ -5,43 +5,52 @@ export async function load({ params }) {
     // Extract the slug from the params
     const { slug } = params;
 
-    // Define your GraphQL query with a filter for the specific slug
-    const query = gql`
+    // Define your GraphQL queries
+    const specificPostQuery = gql`
         query GetKennisbankBySlug($slug: String!) {
-            kennisbanks(where: { slug: $slug }) {
+            specificPost: kennisbanks(where: { slug: $slug }) {
                 author
                 categorie
-                createdAt
                 date
                 image {
                     url
                 }
                 title
                 content {
-                    raw
                     html
-                    markdown
-                    text
                 }
                 slug
             }
         }
     `;
 
-    // Pass the slug as a variable to the query
+    const otherPostsQuery = gql`
+        query GetAllKennisbanks($slug: String!) {
+            otherPosts: kennisbanks(where: { slug_not: $slug }) {
+                title
+                slug
+            }
+        }
+    `;
+
+    // Pass the slug as a variable to both queries
     const variables = { slug };
 
     try {
-        // Execute the GraphQL query with the variable
-        const data = await hygraph.request(query, variables);
+        // Execute both GraphQL queries
+        const [specificPostData, otherPostsData] = await Promise.all([
+            hygraph.request(specificPostQuery, variables),
+            hygraph.request(otherPostsQuery, variables),
+        ]);
 
-        // Return the first project found with the matching slug
-        if (data.kennisbanks.length > 0) {
+        // Return the specific post and other posts data
+        if (specificPostData.specificPost.length > 0) {
             return {
-                kennisbank: data.kennisbanks[0], // Assuming you want to return a single project
+                kennisbank: specificPostData.specificPost[0],
+                otherPosts: otherPostsData.otherPosts,
             };
         } else {
-            // Handle the case where no project with the specified slug is found
+            // Handle the case where no specific post with the specified slug is found
             return {
                 status: 404, // Not Found
                 error: "Post not found",
