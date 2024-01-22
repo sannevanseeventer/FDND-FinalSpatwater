@@ -17,6 +17,7 @@
         </div>
       </div>
     </div>
+    <img class="wave-bottom" src="/assets/gray-wave-bottom.svg" alt="" loading="lazy">
   </section>
 {/each}
 
@@ -27,12 +28,21 @@
     padding-bottom: 5rem;
     margin-bottom: 5rem;
     background: var(--lg-bg);
+    position: relative;
   }
+
+  .wave-bottom {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		margin-top: 2rem;
+	}
 
   .inner-section {
     width: 70%;
     margin-left: 15%;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
 
   .horizontal-flex-row {

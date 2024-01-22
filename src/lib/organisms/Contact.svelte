@@ -7,6 +7,7 @@
 
 <!--==================== CONTACT ====================-->
 <section>
+  <img class="wave" src="/assets/gray-wave.svg" alt="" loading="lazy">
   <div class="inner-section">
     <h2 id="contact">Contact</h2>
     <div class="horizontal-flex-row">
@@ -18,6 +19,7 @@
       </div>
     </div>
   </div>
+  <img class="wave-bottom" src="/assets/gray-wave-bottom.svg" alt="" loading="lazy">
 </section>
 
 <style>
@@ -25,13 +27,31 @@
     width: 100%;
     padding: 2rem 0rem;
     background: var(--lg-bg);
+    position: relative;
   }
+
+  .wave {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		margin-top: -1rem;
+	}
+
+  .wave-bottom {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		margin-top: 2rem;
+	}
 
   .inner-section {
     /* padding: 0rem 2.5rem; */
     width: 70%;
     margin-left: 15%;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
+    margin-top: 5rem;
   }
 
   h2 {

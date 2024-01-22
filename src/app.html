@@ -42,14 +42,14 @@
 </html>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
 
 	* {
 		box-sizing: border-box;
 		padding: 0;
 		margin: 0;
 		scroll-behavior: smooth;
-		font-family: "Open sans", sans-serif;
+		font-family: "Open sans", sans-serif, Arial, Helvetica;
 		font-size: 16px;
 	}
 
@@ -158,13 +158,29 @@
 		margin-top: 1rem;
 	}
 
-
 	/* Expertise content styling */
 	.expertise-content section {
 		width: 100%;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 		background: var(--lg-bg);
+		position: relative;
+	}
+
+	.expertise-content .wave {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		margin-top: -1rem;
+	}
+
+	.expertise-content .wave-bottom {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		margin-top: 2rem;
 	}
 
 	.expertise-content section:last-child {
@@ -184,6 +200,22 @@
 		/* Display text-container second */
 	}
 
+	.expertise-content section:nth-child(2) .wave, .expertise-content section:nth-child(3) .wave  {
+		display: none;
+	}
+
+	.climate section:nth-child(1) .wave-bottom, .climate section:nth-child(2) .wave-bottom  {
+		display: none;
+	}
+
+	.expertise-content section:nth-child(2) .inner-section, .expertise-content section:nth-child(3) .inner-section {
+		margin-top: 0;
+	}
+
+	.climate section:nth-child(1) .inner-section, .climate section:nth-child(2) .inner-section {
+		margin-bottom: 3rem;
+	}
+
 	.expertise-content section:nth-child(2) .image-container {
 		order: 1 !important;
 		/* Display image-container first */
@@ -197,7 +229,8 @@
 	.expertise-content .inner-section {
 		width: 70%;
 		margin-left: 15%;
-		margin-bottom: 3rem;
+		margin-bottom: 8rem;
+		margin-top: 3rem;
 	}
 
 	.expertise-content .horizontal-flex-row {

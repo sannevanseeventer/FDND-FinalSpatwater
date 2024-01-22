@@ -5,6 +5,7 @@
 <!--==================== KLIMAATADAPTATIE ====================-->
 {#each data.klimaatadaptaties as item}
   <section class="climate-container">
+    <img class="wave" src="/assets/gray-wave.svg" alt="" loading="lazy">
     <div class="inner-section">
       <div class="horizontal-flex-row">
         <div class="text-container arrow-list">
@@ -17,5 +18,6 @@
         </div>
       </div>
     </div>
+    <img class="wave-bottom" src="/assets/gray-wave-bottom.svg" alt="" loading="lazy">
   </section>
 {/each}
