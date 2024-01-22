@@ -10,7 +10,7 @@
                 <img src={item.image.url} alt="boom illustratie" loading="lazy"/>
                 <div class="post-text">
                     <div class="post-info">
-                        <span class="{item.categorie} category-label">{item.categorie}</span>
+                        <span class="categorie-label {item.categorie} category-label">{item.categorie}</span>
                         <span class="author">Door {item.author} op {item.date}</span>
                     </div>
                     <h3 id="over">{item.title}</h3>
@@ -45,7 +45,7 @@
     .post img {
         margin: 0;
         width: 30%;
-        height: 7rem;
+        height: 8rem;
         object-fit: cover;
         border-radius: 1rem 0rem 0rem 1rem;
     }
@@ -81,6 +81,14 @@
 	@media only screen and (max-width: 1100px) {
 		.post-info * {
             font-size: .8rem !important;
+        }
+
+        .post-info {
+            flex-direction: column;
+        }
+
+        .categorie-label {
+            width: fit-content;
         }
 	}
 </style>
