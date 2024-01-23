@@ -1,9 +1,3 @@
-<script>
-  import { onMount } from "svelte"
-
-  onMount(() => {})
-</script>
-
 <!--==================== FOOTER ILLUSTRATIONS ====================-->
 <section>
   <img

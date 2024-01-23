@@ -1,8 +1,5 @@
 <script>
     import Grot from "../molecules/Grot.svelte";
-
-    
-
 </script>
 
 <!--==================== FOOTER ====================-->

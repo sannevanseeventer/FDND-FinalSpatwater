@@ -1,3 +1,21 @@
+<script>
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        const menuButton = document.querySelector('.menu-button');
+        const menu = document.querySelector('.menu');
+
+        document.querySelectorAll('.menu li a').forEach(link => {
+            link.addEventListener('click', (event) => {
+                if (menuButton.checked) {
+                menuButton.checked = false;
+                menu.classList.add('hidden');
+                }
+            });
+        });  
+    });
+</script>
+
 <!--==================== NAVIGATION ====================-->
 <nav>
     <div class="navbar-container">
@@ -31,11 +49,11 @@
     nav {
         width: 100vw;
         height: auto;
-        background-color: #fff;
         box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
         position: fixed;
-        width: 100vw;
         z-index: 99999;
+        font-weight: 500;
+        background-color: #fff;
     }
 
     nav ul {
@@ -48,7 +66,7 @@
 
     nav li a {
         display: block;
-        text-align: center;
+        text-align: right;
         padding: 1.25em 1.25em;
         text-decoration: none;
         color: var(--darkblue);
@@ -72,7 +90,6 @@
     nav .menu {
         clear: both;
         height: 0;
-        transition: height 0.2s ease-out;
     }
 
     /* Icon */
@@ -116,8 +133,29 @@
     nav .menu-button {
         display: none;
     }
+
     nav .menu-button:checked ~ .menu {
-        height: 100vh;
+        height: fit-content;
+        padding-bottom: 1rem;
+        width: 40%;
+        margin-left: 60%;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.423);
+        border-radius: 0rem 0rem 0rem 1rem;
+        position: absolute;
+    }
+
+    nav .menu-button:checked ~ ul li a {
+        font-size: 1rem;
+        padding: .8rem 1rem;
+        font-weight: 600;
+    }
+
+    nav .menu-button:checked ~ ul li:last-child {
+        margin-top: 3rem;
+    }
+
+    nav .menu-button:checked ~ ul li a span {
+        margin: 0;
     }
 
     nav .menu-button:checked ~ .menu-icon .bars {
