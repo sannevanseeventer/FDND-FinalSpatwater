@@ -78,6 +78,7 @@
     </div>
     <div class="all-posts-container">
       <!-- <ProjectFilter {data} /> -->
+      <p class="all-posts-p">Lees al onze artikelen</p>
       <AllPosts {data} />
     </div>
   </div>
@@ -107,6 +108,10 @@
 
   p {
     margin-bottom: 2rem;
+  }
+
+  .all-posts-p {
+    margin-bottom: 1rem;
   }
 
   .last-posts-container {

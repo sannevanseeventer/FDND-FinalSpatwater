@@ -68,4 +68,11 @@
         background-color: #4ECD5D !important;
         color: #fff;
     }
+
+    @media only screen and (max-width: 1100px) {
+        .filter-list li {
+            font-size: .7rem;
+            margin-right: .5rem;
+        }
+    }
 </style>

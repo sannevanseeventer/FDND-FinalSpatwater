@@ -40,9 +40,9 @@
         /* padding-right: .5rem; */
     }
 
-    .project-list-container::-webkit-scrollbar {
+    /* .project-list-container::-webkit-scrollbar {
         display: none;
-    }
+    } */
 
     .project-list {
         list-style: none;

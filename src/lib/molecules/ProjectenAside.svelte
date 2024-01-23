@@ -33,4 +33,11 @@
         width: 100%;
         height: 70vh;
     }
+
+      /* Mobiele weergaven */
+    @media only screen and (max-width: 1100px) {
+        aside {
+            width: 90%;
+        }
+    }
 </style>

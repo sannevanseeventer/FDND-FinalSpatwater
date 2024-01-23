@@ -163,5 +163,10 @@
         .menu-icon, .text-block p {
             display: none;
         }
+
+        .action-block ul li {
+            margin-left: .5rem;
+            font-size: .7rem;
+        }
     }
 </style>

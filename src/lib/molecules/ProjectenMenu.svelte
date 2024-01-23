@@ -50,7 +50,7 @@
     <div class="action-block">
         <p id="min" class="menu-icon">Verbergen</p>
         <p id="plus" class="menu-icon">Opties</p>
-        <ul id="menu-list">
+        <ul class="menu-list" id="menu-list">
             <li data-location="utrecht">Utrecht</li>
             <li data-location="rotterdam">Rotterdam</li>
             <li data-location="den-haag">Den-Haag</li>
@@ -154,6 +154,11 @@
         .action-block {
             width: 100%;
             margin-top: 2rem;
+        }
+
+        .action-block ul li {
+            margin-left: .5rem;
+            font-size: .7rem;
         }
 
         .text-block {
