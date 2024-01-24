@@ -1,340 +1,376 @@
 <!DOCTYPE html>
 <html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/SPAT_Logo_zondertekst.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Spatwater" />
 
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="../assets/SPAT_Logo_zondertekst.png" />
-	<meta name="viewport" content="width=device-width" />
-	<meta name="description" content="Spatwater">
+    <title>SPATwater - Een nieuwe generatie hydrologen</title>
 
+    %sveltekit.head%
 
-	<title>SPATwater - Een nieuwe generatie hydrologen</title>
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
 
-	%sveltekit.head%
+    <!--=============== GOOGLE ICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
-	<!--=============== REMIXICONS ===============-->
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../assets/swiper-bundle.min.css" />
 
+    <!--=============== SWIPER JS ===============-->
+    <!-- <script src="/static/assets/swiper-bundle.min.js"></script> -->
 
-	<!--=============== GOOGLE ICONS ===============-->
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--=============== LEAFLET JS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
+  </head>
 
-	<!--=============== SWIPER CSS ===============-->
-	<link rel="stylesheet" href="../assets/swiper-bundle.min.css">
-
-	<!--=============== SWIPER JS ===============-->
-	<!-- <script src="/static/assets/swiper-bundle.min.js"></script> -->
-
-	<!--=============== LEAFLET JS ===============-->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-		integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
-	<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-		integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
-
-</head>
-
-<body data-sveltekit-preload-data="hover">
-<!-- preloader section -->
-<div class="preloader">
-    <div class="sp-loading sp-loading-circle">
-      <div class="spinner-circle1 spinner-circle"></div>
-      <div class="spinner-circle2 spinner-circle"></div>
-      <div class="spinner-circle3 spinner-circle"></div>
-      <div class="spinner-circle4 spinner-circle"></div>
-      <div class="spinner-circle5 spinner-circle"></div>
-      <div class="spinner-circle6 spinner-circle"></div>
-      <div class="spinner-circle7 spinner-circle"></div>
-      <div class="spinner-circle8 spinner-circle"></div>
-      <div class="spinner-circle9 spinner-circle"></div>
-      <div class="spinner-circle10 spinner-circle"></div>
-      <div class="spinner-circle11 spinner-circle"></div>
-      <div class="spinner-circle12 spinner-circle"></div>
+  <body data-sveltekit-preload-data="hover">
+    <!-- preloader section -->
+    <div class="preloader">
+      <div class="sp-loading sp-loading-circle">
+        <div class="spinner-circle1 spinner-circle"></div>
+        <div class="spinner-circle2 spinner-circle"></div>
+        <div class="spinner-circle3 spinner-circle"></div>
+        <div class="spinner-circle4 spinner-circle"></div>
+        <div class="spinner-circle5 spinner-circle"></div>
+        <div class="spinner-circle6 spinner-circle"></div>
+        <div class="spinner-circle7 spinner-circle"></div>
+        <div class="spinner-circle8 spinner-circle"></div>
+        <div class="spinner-circle9 spinner-circle"></div>
+        <div class="spinner-circle10 spinner-circle"></div>
+        <div class="spinner-circle11 spinner-circle"></div>
+        <div class="spinner-circle12 spinner-circle"></div>
+      </div>
     </div>
-  </div>	
-<div style="display: contents">%sveltekit.body%</div>
-<script>
-   document.addEventListener("DOMContentLoaded", function () {
-      // Hide the loader when the page is done loading
-      document.querySelector('.preloader').style.display = 'none';
-    });
-  
-  </script>
-</body>
-
+    <div style="display: contents">%sveltekit.body%</div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Hide the loader when the page is done loading
+        document.querySelector(".preloader").style.display = "none";
+      });
+    </script>
+  </body>
 </html>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
 
-	* {
-		box-sizing: border-box;
-		padding: 0;
-		margin: 0;
-		scroll-behavior: smooth;
-		font-family: "Open sans", sans-serif, Arial, Helvetica;
-		font-size: 16px;
-	}
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Open sans", sans-serif, Arial, Helvetica;
+    font-size: 16px;
+  }
 
-	body {
-		position: relative;
-	}
+  body {
+    position: relative;
+  }
 
-	:root {
-		--spat: #7faec5;
-		--lg-bg: #fafafa;
-		--green: #4ecd5d;
-		--darkblue: #384b61;
-	}
+  :root {
+    --spat: #7faec5;
+    --lg-bg: #fafafa;
+    --green: #4ecd5d;
+    --darkblue: #384b61;
+  }
 
-	main {
-		overflow-x: hidden;
-		overflow-y: hidden;
-		margin: 0 !important;
-	}
+  @media (prefers-color-scheme: dark) {
+    root {
+      --spat: #abcfe1;
+      --lg-bg: #384b61;
+      --green: #4ecd5d;
+      --darkgreen: #4ecd5d89;
+      --darkblue: #ebebeb;
+      --darkgrey: #ebebeb;
+      --middlegrey: #f2f2f2;
+      --white: #2e4161;
+    }
+  }
 
-	/* Styling headings */
-	h2 {
-		padding: 0rem;
-		color: var(--spat);
-		margin-bottom: 1rem;
-		font-size: 1.5rem;
-	}
+  .is-high-contrast {
+    --spat: #abcfe1;
+    --lg-bg: #384b61;
+    --darkblue: #ebebeb;
+    --darkgrey: #ebebeb;
+    --middlegrey: #f2f2f2;
+    --white: #2e4161;
+  }
 
-	p {
-		margin-bottom: 1rem;
-		max-width: 40rem;
-	}
+  main {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0 !important;
+  }
 
-	/* link styling */
-	.green-link {
-		display: inline-block;
-		background-color: var(--green);
-		color: var(--white-color);
-		padding: 0.7rem 1rem;
-		border-radius: 5px;
-		font-weight: var(--font-semi-bold);
-		transition: 0.3s;
-	}
+  /* Styling headings */
+  h2 {
+    padding: 0rem;
+    color: var(--spat);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
 
-	a.green-link {
-		color: white;
-		text-decoration: none;
-	}
+  p {
+    margin-bottom: 1rem;
+    max-width: 40rem;
+  }
 
-	/* Make arrows at all arrow lists */
-	ul {
-		list-style: none;
-	}
+  /* link styling */
+  .green-link {
+    display: inline-block;
+    background-color: var(--green);
+    color: var(--white-color);
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    font-weight: var(--font-semi-bold);
+    transition: 0.3s;
+  }
 
-	.arrow-list li {
-		position: relative;
-		padding-left: 1rem;
-		/* Adjust space between arrow and text */
-	}
+  a.green-link {
+    color: white;
+    text-decoration: none;
+  }
 
-	.arrow-list li::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 35%;
-		transform: translateY(-50%);
-		transform: rotate(45deg);
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 5px 5px 5px 5px;
-		border-radius: 0% 50% 50% 50%;
-		color: var(--spat);
-		border-color: transparent transparent transparent transparent var(--spat);
-	}
+  /* Make arrows at all arrow lists */
+  ul {
+    list-style: none;
+  }
 
-	/* Hide leaflet controls */
-	.leaflet-control {
-		display: none !important;
-	}
+  .arrow-list li {
+    position: relative;
+    padding-left: 1rem;
+    /* Adjust space between arrow and text */
+  }
 
-	/* Category colors  */
-	.Klimaatadaptatie {
-		background-color: #4ecd5d3f;
-		border: solid 1px var(--green);
-	}
+  .arrow-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35%;
+    transform: translateY(-50%);
+    transform: rotate(45deg);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-radius: 0% 50% 50% 50%;
+    color: var(--spat);
+    border-color: transparent transparent transparent transparent var(--spat);
+  }
 
-	.Waterkwaliteit {
-		background-color: #63b6e654;
-		border: solid 1px var(--spat);
-	}
+  /* Hide leaflet controls */
+  .leaflet-control {
+    display: none !important;
+  }
 
-	.bRAIN {
-		background-color: var(--lg-bg);
-		border: solid 1px var(--darkblue);
-	}
+  /* Category colors  */
+  .Klimaatadaptatie {
+    background-color: #4ecd5d3f;
+    border: solid 1px var(--green);
+  }
 
-	/* Contact html styling (from hygraph) */
-	.contact-data a {
-		color: var(--darkblue);
-	}
+  .Waterkwaliteit {
+    background-color: #63b6e654;
+    border: solid 1px var(--spat);
+  }
 
-	.contact-data h3 {
-		color: var(--spat);
-		font-size: 1.2rem;
-		margin-bottom: 1rem;
-	}
+  .bRAIN {
+    background-color: var(--lg-bg);
+    border: solid 1px var(--darkblue);
+  }
 
-	.contact-data li:last-child {
-		margin-top: 1rem;
-	}
+  /* Contact html styling (from hygraph) */
+  .contact-data a {
+    color: var(--darkblue);
+  }
 
-	/* Expertise content styling */
-	.expertise-content section {
-		width: 100%;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		background: var(--lg-bg);
-		position: relative;
-	}
+  .contact-data h3 {
+    color: var(--spat);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
 
-	.expertise-content .wave {
-		width: 100%;
-		height: auto;
-		position: absolute;
-		top: 0;
-		margin-top: -1rem;
-	}
+  .contact-data li:last-child {
+    margin-top: 1rem;
+  }
 
-	.expertise-content .wave-bottom {
-		width: 100%;
-		height: auto;
-		position: absolute;
-		bottom: 0;
-		margin-top: 2rem;
-	}
+  /* Expertise content styling */
+  .expertise-content section {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: var(--lg-bg);
+    position: relative;
+  }
 
-	.expertise-content section:last-child {
-		margin-bottom: 5rem;
-	}
+  .expertise-content .wave {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    margin-top: -1rem;
+  }
 
-	.expertise-content section:first-child {
-		padding-top: 5rem;
-	}
+  .expertise-content .wave-bottom {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    margin-top: 2rem;
+  }
 
-	.climate section:nth-child(1) .text-container a, .climate section:nth-child(2) .text-container a {
-		display: none;
-	}
+  .expertise-content section:last-child {
+    margin-bottom: 5rem;
+  }
 
-	.expertise-content section:nth-child(2) .text-container {
-		order: 2 !important;
-		/* Display text-container second */
-	}
+  .expertise-content section:first-child {
+    padding-top: 5rem;
+  }
 
-	.expertise-content section:nth-child(2) .wave, .expertise-content section:nth-child(3) .wave  {
-		display: none;
-	}
+  .climate section:nth-child(1) .text-container a,
+  .climate section:nth-child(2) .text-container a {
+    display: none;
+  }
 
-	.climate section:nth-child(1) .wave-bottom, .climate section:nth-child(2) .wave-bottom  {
-		display: none;
-	}
+  .expertise-content section:nth-child(2) .text-container {
+    order: 2 !important;
+    /* Display text-container second */
+  }
 
-	.expertise-content section:nth-child(2) .inner-section, .expertise-content section:nth-child(3) .inner-section {
-		margin-top: 0;
-	}
+  .expertise-content section:nth-child(2) .wave,
+  .expertise-content section:nth-child(3) .wave {
+    display: none;
+  }
 
-	.climate section:nth-child(1) .inner-section, .climate section:nth-child(2) .inner-section {
-		margin-bottom: 3rem;
-	}
+  .climate section:nth-child(1) .wave-bottom,
+  .climate section:nth-child(2) .wave-bottom {
+    display: none;
+  }
 
-	.expertise-content section:nth-child(2) .image-container {
-		order: 1 !important;
-		/* Display image-container first */
-	}
+  .expertise-content section:nth-child(2) .inner-section,
+  .expertise-content section:nth-child(3) .inner-section {
+    margin-top: 0;
+  }
 
-	.expertise-content section:nth-child(2) .text-container * {
-		max-width: 50rem !important;
-		/* padding-left: 10rem !important; */
-	}
+  .climate section:nth-child(1) .inner-section,
+  .climate section:nth-child(2) .inner-section {
+    margin-bottom: 3rem;
+  }
 
-	.expertise-content .inner-section {
-		width: 70%;
-		margin-left: 15%;
-		margin-bottom: 8rem;
-		margin-top: 3rem;
-	}
+  .expertise-content section:nth-child(2) .image-container {
+    order: 1 !important;
+    /* Display image-container first */
+  }
 
-	.expertise-content .horizontal-flex-row {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		gap: 10%;
-	}
+  .expertise-content section:nth-child(2) .text-container * {
+    max-width: 50rem !important;
+    /* padding-left: 10rem !important; */
+  }
 
-	.expertise-content .text-container {
-		width: 100%;
-	}
+  .expertise-content .inner-section {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 8rem;
+    margin-top: 3rem;
+  }
 
-	.expertise-content p {
-		margin-bottom: 1rem !important;
-	}
+  .expertise-content .horizontal-flex-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+  }
 
-	.expertise-content .image-container {
-		width: 40%;
-	}
+  .expertise-content .text-container {
+    width: 100%;
+  }
 
-	.expertise-content img {
-		object-fit: contain;
-		height: 20rem;
-		margin: 0;
-    	width: 100%;
-	}
+  .expertise-content p {
+    margin-bottom: 1rem !important;
+  }
 
-	/* Mobiele weergaven */
-	@media only screen and (max-width: 1100px) {
-		.expertise-content .horizontal-flex-row {
-			flex-direction: column;
-		}
+  .expertise-content .image-container {
+    width: 40%;
+  }
 
-		.expertise-content .text-container {
-			width: 100%;
-		}
+  .expertise-content img {
+    object-fit: contain;
+    height: 20rem;
+    margin: 0;
+    width: 100%;
+  }
 
-		.expertise-content .image-container {
-			width: 100%;
-			margin-top: 4rem;
-		}
+  /* Mobiele weergaven */
+  @media only screen and (max-width: 1100px) {
+    .expertise-content .horizontal-flex-row {
+      flex-direction: column;
+    }
 
-		.expertise-content img {
-			width: 100%;
-			object-fit: contain;
-			margin: 2rem 0rem;
-		}
+    .expertise-content .text-container {
+      width: 100%;
+    }
 
-		.expertise-content .inner-section {
-			/* padding: 0rem 2.5rem; */
-			width: 70%;
-			margin-bottom: 2rem;
-		}
+    .expertise-content .image-container {
+      width: 100%;
+      margin-top: 4rem;
+    }
 
-		.expertise-content section:nth-child(2) .text-container {
-			order: 1 !important;
-			/* Display text-container second */
-		}
+    .expertise-content img {
+      width: 100%;
+      object-fit: contain;
+      margin: 2rem 0rem;
+    }
 
-		.expertise-content section:nth-child(2) .image-container {
-			order: 2 !important;
-			/* Display image-container first */
-		}
+    .expertise-content .inner-section {
+      /* padding: 0rem 2.5rem; */
+      width: 70%;
+      margin-bottom: 2rem;
+    }
 
-		.expertise-content section:nth-child(2) .text-container * {
-			max-width: 40rem !important;
-			padding-left: 0rem;
-		}
-	}
+    .expertise-content section:nth-child(2) .text-container {
+      order: 1 !important;
+      /* Display text-container second */
+    }
 
-	/* Contrast colors */
-	@media screen and (prefers-contrast: more) {
-		:root {
-			--spat: #384b61;
-			--green: #384b61;
-		}
-	}
+    .expertise-content section:nth-child(2) .image-container {
+      order: 2 !important;
+      /* Display image-container first */
+    }
+
+    .expertise-content section:nth-child(2) .text-container * {
+      max-width: 40rem !important;
+      padding-left: 0rem;
+    }
+  }
+
+  /* Contrast colors */
+  @media screen and (prefers-contrast: more) {
+    :root {
+      --spat: #384b61;
+      --green: #384b61;
+    }
+  }
 </style>
