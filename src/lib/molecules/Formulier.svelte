@@ -6,41 +6,47 @@
   let subject = "";
   let message = "";
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  //   const handleSubmit = async (event) => {
+  //     event.preventDefault();
 
-    const formData = {
-      name,
-      email,
-      subject,
-      message,
-    };
+  //     const formData = {
+  //       name,
+  //       email,
+  //       subject,
+  //       message,
+  //     };
 
-    try {
-      const response = await fetch("/api/submitForm", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+  //     try {
+  //       const response = await fetch("/api/submitForm", {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify(formData),
+  //       });
 
-      if (response.ok) {
-        const result = await response.json();
-        console.log(result.message); // Log success message
-        // You can add code here to show a success message to the user
-      } else {
-        throw new Error("Form submission failed.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      // Handle error, show error message to the user, etc.
-    }
-  };
+  //       if (response.ok) {
+  //         const result = await response.json();
+  //         console.log(result.message); // Log success message
+  //         // You can add code here to show a success message to the user
+  //       } else {
+  //         throw new Error("Form submission failed.");
+  //       }
+  //     } catch (error) {
+  //       console.error("Error:", error);
+  //       // Handle error, show error message to the user, etc.
+  //     }
+  //   };
 </script>
 
 <!--==================== CONTACT FORM ====================-->
-<form on:submit={handleSubmit}>
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input
+    type="hidden"
+    name="access_key"
+    value="e33b9602-7604-4358-b311-89c1d5d54b5a"
+  />
+
   <label for="name">Naam</label>
   <input
     class="field"
@@ -91,7 +97,7 @@
 
   .field {
     width: 100%;
-    border: 1px solid #c2c2c2;
+    border: 1px solid var(--darkgrey);
     padding: 0.4rem 0.5rem;
     border-radius: 0.5rem;
     margin: 0.5rem 0rem 1rem 0rem;
@@ -99,7 +105,7 @@
 
   .no-border {
     border: none;
-    color: white;
+    color: var(--white);
     text-decoration: none;
     cursor: pointer;
   }
@@ -108,14 +114,13 @@
     color: var(--darkblue);
   }
 
+  textarea {
+    resize: none;
+  }
+
   textarea:focus,
   input:focus {
     outline-color: var(--green);
-    outline-width: 2px;
-  }
-
-  .no-border:focus {
-    outline: 2px solid var(--darkblue);
-    outline-offset: 4px;
+    outline-width: 1px;
   }
 </style>
