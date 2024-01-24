@@ -81,5 +81,10 @@
     .horizontal-flex-row {
       flex-direction: column;
     }
+
+    .wave, .wave-bottom {
+      display: none;
+    }
+
   }
 </style>
