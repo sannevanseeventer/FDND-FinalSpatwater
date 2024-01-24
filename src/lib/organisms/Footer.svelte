@@ -7,12 +7,13 @@
 
 <section class="container">
   <article>
+    <div class=" row-1">
     <img
       class="logo"
       src="/assets/logo_spatwater.png"
       alt="Logo van SPATwater"
     />
-    <h3>Een nieuwe generatie hydrologen</h3>
+    <span>Een nieuwe generatie hydrologen</span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="44"
@@ -27,6 +28,7 @@
         alt="Linked In logo"
       />
     </svg>
+  </div>
   </article>
 
   <article>
@@ -54,33 +56,36 @@
     </ul>
   </article>
 
-  <div class="line"></div>
-
-  <article class="address">
-    <p>Meteorenweg 280, 1035 RN Amsterdam</p>
-  </article>
-
-  <article class="copyright">
-    <p>© 2023 SPATwater. All rights reserved.</p>
-  </article>
+  <div class="copyright">
+    <p class="copyright-text">© 2023 SPATwater. All rights reserved.</p>
+  </div>
 </section>
 
 <style>
   .logo {
-    width: 10rem;
+    width: 8rem;
     height: auto;
-    margin: 0.5rem -0.1rem;
+    margin: 1rem -0.1rem;
   }
 
   h2 {
     color: var(--spat);
     font-size: 1.3rem;
+    margin-bottom: 0;
   }
 
-  h3 {
+  span {
     color: white;
     font-size: 1rem;
+    font-weight: 600;
   }
+
+  .row-1{
+      display: flex;
+      flex-direction: column;
+    }
+
+
 
   p {
     color: white;
@@ -104,6 +109,7 @@
     text-decoration: none;
     color: white;
     cursor: pointer;
+    margin-bottom: .5rem;
   }
 
   li:focus,
@@ -129,46 +135,31 @@
     padding-bottom: 10rem;
   }
 
-  .line {
-    height: 2px;
-    background-color: white;
-    width: 80%;
-    margin-bottom: 4rem;
-    align-self: center;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-  }
-
-  .address {
+  .copyright {
     position: absolute;
     bottom: 0rem;
     margin-bottom: 1rem;
-    left: 10%;
-    color: white;
-    font-size: 1rem;
-    z-index: 2;
+    display: flex;
+
   }
 
-.copyright {
-  right: 10%;
-}
-/* Focus styling */
-.container:focus {
-    outline: 4px solid var(--spat);
-    outline-offset: 4px; 
-}
+  .copyright-text{
+    font-size: .8rem;
+    text-align: center;
+    color: white;
+    display: flex;
 
-.container li a:focus {
-    outline: 4px solid var(--spat);
-    background-color: rgba(255, 255, 255, 0.2); 
-    border-radius: 0.2em; 
-}
+  }
+
+  article{
+    margin-bottom: 1rem;
+  }
 
   @media screen and (min-width: 750px) {
     h2 {
       margin-bottom: 1.5rem;
       margin-top: 2rem;
+    font-size: 1.6rem;
     }
     section {
       height: 60vh;
@@ -179,6 +170,27 @@
 
     li {
       margin-bottom: 0.5rem;
+    }
+
+    a{
+      font-size: 1.4rem;
+    }
+
+    .row-1{
+      display: flex;
+      flex-direction: column;
+    }
+
+    span{
+     font-size: 1.2rem;
+    }
+
+    .logo{
+      width: 10rem;
+    }
+
+    .copyright{
+      right: 10%;
     }
   }
 </style>

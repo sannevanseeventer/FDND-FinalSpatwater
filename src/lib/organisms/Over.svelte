@@ -114,5 +114,9 @@
       width: 70%;
       margin-bottom: 2rem;
     }
+
+    .wave-bottom {
+      display: none;
+    }
   }
 </style>

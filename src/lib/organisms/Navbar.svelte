@@ -1,10 +1,4 @@
 <script>
-  const toggleMenu = () => {
-    console.log("toggleMenu called");
-    const menuButton = document.getElementById("menu-button");
-    menuButton.checked = !menuButton.checked;
-  };
-
   import { onMount } from "svelte";
 
   onMount(() => {
