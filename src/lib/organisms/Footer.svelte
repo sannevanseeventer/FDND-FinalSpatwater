@@ -150,17 +150,6 @@
     z-index: 2;
   }
 
-<<<<<<< Updated upstream
-  .copyright {
-    position: absolute;
-    bottom: 0rem;
-    margin-bottom: 1rem;
-    right: 10%;
-    color: white;
-    font-size: 1rem;
-    z-index: 2;
-  }
-=======
 .copyright {
   right: 10%;
 }
@@ -175,7 +164,6 @@
     background-color: rgba(255, 255, 255, 0.2); 
     border-radius: 0.2em; 
 }
->>>>>>> Stashed changes
 
   @media screen and (min-width: 750px) {
     h2 {

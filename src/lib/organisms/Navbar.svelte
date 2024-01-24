@@ -1,6 +1,11 @@
 <script>
-<<<<<<< Updated upstream
-    import { onMount } from "svelte";
+  const toggleMenu = () => {
+    console.log("toggleMenu called");
+    const menuButton = document.getElementById('menu-button');
+    menuButton.checked = !menuButton.checked;
+};
+
+import { onMount } from "svelte";
 
     onMount(() => {
         const menuButton = document.querySelector('.menu-button');
@@ -15,35 +20,6 @@
             });
         });  
     });
-</script>
-
-<!--==================== NAVIGATION ====================-->
-<nav>
-    <div class="navbar-container">
-        <a href="/">
-            <img class="logo" src="/assets/logotest2.png" alt="logo spatwater" />
-        </a>
-
-        <input class="menu-button" type="checkbox" id="menu-button" />
-        <label class="menu-icon" for="menu-button"
-            ><span class="bars"></span></label
-        >
-
-        <ul class="menu">
-            <li><a href="/#over">Over</a></li>
-            <li><a href="/#expertise">Expertise</a></li>
-            <li><a href="/#team">Team</a></li>
-            <li><a href="/kennisbank">Kennisbank</a></li>
-            <li><a href="/projecten">Projecten</a></li>
-            <li><a href="/kaart">Kansenkaart</a></li>
-            <li><a href="/#contact"><span>Contact</span></a></li>
-        </ul>
-=======
-  const toggleMenu = () => {
-    console.log("toggleMenu called");
-    const menuButton = document.getElementById('menu-button');
-    menuButton.checked = !menuButton.checked;
-};
 </script>
   <!--==================== NAVIGATION ====================-->
   <nav aria-label="Site Navigation">
@@ -66,7 +42,6 @@
         <li><a href="/kaart" aria-label="Kansenkaart">Kansenkaart</a></li>
         <li><a href="/#contact" aria-label="Contact"><span>Contact</span></a></li>
       </ul>
->>>>>>> Stashed changes
     </div>
   </nav>
 
@@ -120,12 +95,8 @@
      nav .menu {
         clear: both;
         height: 0;
-<<<<<<< Updated upstream
-    }
-=======
         transition: height 0.2s ease-out;
     } 
->>>>>>> Stashed changes
 
     /* Icon */
     nav .menu-icon {

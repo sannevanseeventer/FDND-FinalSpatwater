@@ -21,8 +21,6 @@
     <img class="wave-bottom" src="/assets/gray-wave-bottom.svg" alt="" loading="lazy">
   </section>
 {/each}
-<<<<<<< Updated upstream
-=======
 
 <style>
   .green-link:focus {
@@ -30,4 +28,3 @@
       outline-offset: 4px;
   }
 </style>
->>>>>>> Stashed changes
