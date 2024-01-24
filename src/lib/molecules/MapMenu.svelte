@@ -166,7 +166,7 @@
 
         .action-block ul li {
             margin-left: .5rem;
-            font-size: .7rem;
+            font-size: .6rem;
         }
     }
 </style>
