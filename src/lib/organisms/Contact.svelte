@@ -44,6 +44,7 @@
 		position: absolute;
 		bottom: 0;
 		margin-top: 2rem;
+    margin-bottom: -2rem;
 	}
 
   .inner-section {
