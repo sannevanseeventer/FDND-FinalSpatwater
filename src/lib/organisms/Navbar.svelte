@@ -1,4 +1,5 @@
 <script>
+<<<<<<< Updated upstream
     import { onMount } from "svelte";
 
     onMount(() => {
@@ -37,8 +38,37 @@
             <li><a href="/kaart">Kansenkaart</a></li>
             <li><a href="/#contact"><span>Contact</span></a></li>
         </ul>
+=======
+  const toggleMenu = () => {
+    console.log("toggleMenu called");
+    const menuButton = document.getElementById('menu-button');
+    menuButton.checked = !menuButton.checked;
+};
+</script>
+  <!--==================== NAVIGATION ====================-->
+  <nav aria-label="Site Navigation">
+    <div class="navbar-container">
+      <a href="/">
+        <img class="logo" src="/assets/logotest2.png" alt="logo spatwater" tabindex="0" loading="lazy" width="100px" height="100px"/>
+      </a>
+  
+      <input class="menu-button" type="checkbox" id="menu-button" tabindex="0" />
+      <label class="menu-icon" for="menu-button" tabindex="0" role="button" aria-label="Toggle Menu" on:keydown={e => e.key === 'Enter' && toggleMenu()}>
+        <span class="bars"></span>
+      </label>
+  
+      <ul class="menu">
+        <li><a href="/#over" aria-label="Over">Over</a></li>
+        <li><a href="/#expertise" aria-label="Expertise">Expertise</a></li>
+        <li><a href="/#team" aria-label="Team">Team</a></li>
+        <li><a href="/kennisbank" aria-label="Kennisbank">Kennisbank</a></li>
+        <li><a href="/projecten" aria-label="Projecten">Projecten</a></li>
+        <li><a href="/kaart" aria-label="Kansenkaart">Kansenkaart</a></li>
+        <li><a href="/#contact" aria-label="Contact"><span>Contact</span></a></li>
+      </ul>
+>>>>>>> Stashed changes
     </div>
-</nav>
+  </nav>
 
 <style>
     :global(:has(.navbar-container)) {
@@ -56,7 +86,7 @@
         background-color: #fff;
     }
 
-    nav ul {
+     nav ul {
         margin: 0;
         padding: 0;
         list-style: none;
@@ -79,7 +109,7 @@
         padding: 0.5em 1em;
         border-radius: 5px;
         margin-right: 1rem;
-    }
+    } 
 
     nav .logo {
         width: 6rem;
@@ -87,10 +117,15 @@
         margin: 0.5rem 1rem;
     }
 
-    nav .menu {
+     nav .menu {
         clear: both;
         height: 0;
+<<<<<<< Updated upstream
     }
+=======
+        transition: height 0.2s ease-out;
+    } 
+>>>>>>> Stashed changes
 
     /* Icon */
     nav .menu-icon {
@@ -174,6 +209,42 @@
     .menu-button:checked ~ .menu-icon:not(.steps) .bars:after {
         top: 0;
     }
+   /* Focus styling */
+   nav .logo:focus {
+    outline: 2px solid var(--darkblue);
+    outline-offset: 4px;
+  }
+
+  nav li a:focus {
+    background-color: var(--darkblue);
+    color: white;
+  }
+
+  nav .menu-button:focus {
+    outline: 2px solid var(--darkblue);
+    outline-offset: 4px;
+  }
+
+  nav .menu li a:focus {
+    background-color: var(--darkblue);
+    color: white;
+  }
+
+  nav .menu-icon:focus {
+    background-color: var(--darkblue);
+  }
+
+  nav .menu-button,
+  nav .menu-icon {
+    cursor: pointer;
+  }
+
+  /* Focus styling for the logo */
+  nav .logo:focus {
+    outline: 2px solid var(--darkblue);
+    outline-offset: 4px; 
+
+   }
 
     /* 48em = 768px */
     @container (min-width: 900px) {

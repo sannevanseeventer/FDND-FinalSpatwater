@@ -36,7 +36,35 @@
 </head>
 
 <body data-sveltekit-preload-data="hover">
+<<<<<<< Updated upstream
 	<div style="display: contents">%sveltekit.body%</div>
+=======
+<!-- preloader section -->
+<div class="preloader">
+    <div class="sp-loading sp-loading-circle">
+      <div class="spinner-circle1 spinner-circle"></div>
+      <div class="spinner-circle2 spinner-circle"></div>
+      <div class="spinner-circle3 spinner-circle"></div>
+      <div class="spinner-circle4 spinner-circle"></div>
+      <div class="spinner-circle5 spinner-circle"></div>
+      <div class="spinner-circle6 spinner-circle"></div>
+      <div class="spinner-circle7 spinner-circle"></div>
+      <div class="spinner-circle8 spinner-circle"></div>
+      <div class="spinner-circle9 spinner-circle"></div>
+      <div class="spinner-circle10 spinner-circle"></div>
+      <div class="spinner-circle11 spinner-circle"></div>
+      <div class="spinner-circle12 spinner-circle"></div>
+    </div>
+  </div>	
+<div style="display: contents">%sveltekit.body%</div>
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      // Hide the loader when the page is done loading
+      document.querySelector('.preloader').style.display = 'none';
+    });
+  
+  </script>
+>>>>>>> Stashed changes
 </body>
 
 </html>

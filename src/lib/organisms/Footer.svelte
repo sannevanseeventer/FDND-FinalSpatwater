@@ -150,6 +150,7 @@
     z-index: 2;
   }
 
+<<<<<<< Updated upstream
   .copyright {
     position: absolute;
     bottom: 0rem;
@@ -159,6 +160,22 @@
     font-size: 1rem;
     z-index: 2;
   }
+=======
+.copyright {
+  right: 10%;
+}
+/* Focus styling */
+.container:focus {
+    outline: 4px solid var(--spat);
+    outline-offset: 4px; 
+}
+
+.container li a:focus {
+    outline: 4px solid var(--spat);
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 0.2em; 
+}
+>>>>>>> Stashed changes
 
   @media screen and (min-width: 750px) {
     h2 {

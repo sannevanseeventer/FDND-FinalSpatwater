@@ -70,6 +70,23 @@
     margin: 0;
     width: 100%;
   }
+ /* Focus-styling */
+ .climate-container:focus {
+    outline: 2px solid var(--darkblue); 
+    outline-offset: 4px;
+ }
+
+
+  .climate-container:focus {
+    background-color: var(--darkblue); 
+    color: white; 
+  }
+  
+  /* Voeg focus-styling toe aan de link binnen de sectie */
+  .climate-container a.green-link:focus {
+    outline: 2px solid var(--darkblue); 
+    outline-offset: 4px; 
+  }
 
   /* Mobiele weergaven */
   @media only screen and (max-width: 1100px) {

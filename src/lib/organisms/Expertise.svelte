@@ -65,7 +65,7 @@
     <h2 id="expertise">Expertise</h2>
     <div class="inner-section">
         {#each data.expertiseCards as item}
-            <div id="card{item.cardNumber}" class="card-item active">
+            <div id="card{item.cardNumber}" class="card-item active"tabindex="0">
                 <img
                     src="{item.image.url}"
                     alt="Illustratie waterkwaliteit en milieubehoud"
@@ -165,6 +165,20 @@
     a {
         min-width: 100%;
     }
+    .card-item:focus {
+    outline: 2px solid var(--darkblue);
+    outline-offset: 4px;
+}
+.card-item .green-link:focus {
+    outline: 2px solid var(--darkblue);
+    outline-offset: 4px;
+}
+
+/* Alternatively, if you want to style all focusable elements within a card-item */
+.card-item :focus {
+    outline: 2px solid var(--darkblue);
+    outline-offset: 4px;
+}
 
     /* Mobiele weergaven */
     @media only screen and (max-width: 1100px) {
