@@ -30,3 +30,5 @@ public/
 .DS_Store
 Thumbs.db
 .svelte-kit/
+.svelte-kit/ambient.d.ts
+.svelte-kit/generated/server/internal.js

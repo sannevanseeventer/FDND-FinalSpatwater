@@ -11,7 +11,8 @@
         var map = L.map('map', {
         center: [52.360956, 4.8964073],
         zoom: 10,
-        minZoom: 10
+        minZoom: 10,
+        scrollWheelZoom: false
         });
 
         // Define a custom icon
