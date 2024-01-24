@@ -21,3 +21,10 @@
     <img class="wave-bottom" src="/assets/gray-wave-bottom.svg" alt="" loading="lazy">
   </section>
 {/each}
+
+<style>
+  .green-link:focus {
+      outline: 2px solid var(--darkblue);
+      outline-offset: 4px;
+  }
+</style>

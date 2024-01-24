@@ -44,6 +44,7 @@
 		position: absolute;
 		bottom: 0;
 		margin-top: 2rem;
+    margin-bottom: -2rem;
 	}
 
   .inner-section {
@@ -74,7 +75,7 @@
   .text-container {
     width: 100%;
   }
-
+  
   /* Mobiele weergaven */
   @media only screen and (max-width: 1100px) {
     .horizontal-flex-row {

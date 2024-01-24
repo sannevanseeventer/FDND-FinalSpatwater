@@ -62,7 +62,11 @@
     transform: translateY(-0.5rem);
     opacity: 1;
   }
-
+  .card-item:focus-within .partner-image {
+    outline: 4px solid var(--darkblue);
+    /* opacity: -1; */
+      /* outline-offset: 4px red; */
+  }
   /* Mobiele weergaven */
   @media only screen and (max-width: 1100px) {
     section {

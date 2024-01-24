@@ -40,6 +40,10 @@
     filter: invert(0.5);
     transition: 0.3s;
   }
+  .partner-link:focus {
+    outline: 4px solid var(--darkblue); /* Change this to your desired focus color */
+    outline-offset: 4px;
+  }
 
   /* Responsive */
   @media screen and (min-width: 720px) {

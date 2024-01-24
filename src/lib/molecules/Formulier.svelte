@@ -108,13 +108,14 @@
         color: var(--darkblue);
     }
 
-    textarea {
-        resize: none;
-    }
-
     textarea:focus,
     input:focus {
         outline-color: var(--green);
-        outline-width: 1px;
+        outline-width: 2px;
+    }
+
+    .no-border:focus {
+        outline: 2px solid var(--darkblue);
+        outline-offset: 4px;
     }
 </style>

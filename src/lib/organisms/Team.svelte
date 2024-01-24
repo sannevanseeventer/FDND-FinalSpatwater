@@ -22,8 +22,7 @@
         class="card-item"
         style="background-image: url('{hoveredItem === item ? item.imageHover.url : item.image.url}');"
         on:mouseenter={() => handleMouseEnter(item)}
-        on:mouseleave={handleMouseLeave}
-      >
+        on:mouseleave={handleMouseLeave} tabindex="0">
         <div class="card-text">
           <h3>{item.name}</h3>
           <span>{item.email}</span>
@@ -77,11 +76,18 @@
   h3 {
     font-size: 1.5rem;
   }
+  .card-item:focus {
+    outline: 2px solid var(--darkblue);
+    outline-offset: 4px;
+  }
 
   /* Mobiele weergaven */
   @media only screen and (max-width: 1100px) {
       .inner-section {
           flex-direction: column;
+      }
+      .card-item{
+        height: 22rem;
       }
   }
 </style>
