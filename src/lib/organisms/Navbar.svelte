@@ -58,11 +58,11 @@
       <li><a href="/projecten" aria-label="Projecten">Projecten</a></li>
       <li><a href="/kaart" aria-label="Kansenkaart">Kansenkaart</a></li>
       <li><a href="/#contact" aria-label="Contact"><span>Contact</span></a></li>
-      <!-- <li>
+      <li>
         <button class="contrast-toggle">
           <span>Toggle contrast</span>
         </button>
-      </li> -->
+      </li>
     </ul>
   </div>
 </nav>
