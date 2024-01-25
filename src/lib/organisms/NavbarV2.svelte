@@ -88,10 +88,11 @@
 
     ul {
         display: flex;
+        gap: 1rem;
     }
 
     li {
-        margin-left: 2rem;
+        margin-left: 1rem;
         font-weight: 500;
         margin-top: 1.2rem;
         transition: .2s;
@@ -108,8 +109,8 @@
     }
 
     a {
-        display: block;
-        text-align: right;
+        /* display: block; */
+        text-align: left;
         text-decoration: none;
         color: var(--darkblue);
     }
@@ -121,9 +122,9 @@
     }
 
     .menu-icon img {
-        height: 2rem;
-        width: 2rem;
-        margin-top: .9rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-top: 1.3rem;
         margin-right: 1rem;
         cursor: pointer;
         display: none;
@@ -132,15 +133,16 @@
     /* Mobile nav styling */
     .mobile-nav {
         height: 100vh;
-        width: 40%;
-        margin-left: 60%;
+        width: 50%;
+        margin-left: 50%;
         position: fixed;
         z-index: 99998;
         background-color: #fff;
         padding: 1rem;
-        padding-top: 4rem;
+        padding-top: 6rem;
         transform: translateX(100vw);
         transition: .2s;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.298);
     }
 
     .mobile-ul {
