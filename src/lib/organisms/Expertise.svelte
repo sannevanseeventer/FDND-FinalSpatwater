@@ -146,6 +146,7 @@
     h3 {
         font-size: 1.3rem;
         margin-bottom: .5rem;
+        color: var(--darkblue);
     }
 
     p {
