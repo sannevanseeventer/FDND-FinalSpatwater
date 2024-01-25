@@ -89,6 +89,7 @@
     ul {
         display: flex;
         gap: 1rem;
+        align-items: center;
     }
 
     li {
