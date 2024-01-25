@@ -95,7 +95,6 @@
     li {
         margin-left: 1rem;
         font-weight: 500;
-        margin-top: 1.2rem;
         transition: .2s;
     }
 
@@ -104,7 +103,6 @@
     }
 
     .no-margin {
-        margin-top: -.65rem;
         margin-right: 1rem;
         color: #fff;
     }
@@ -125,7 +123,6 @@
     .menu-icon img {
         height: 1.5rem;
         width: 1.5rem;
-        margin-top: 1.3rem;
         margin-right: 1rem;
         cursor: pointer;
         display: none;
@@ -165,6 +162,10 @@
 
         .menu-icon img {
             display: block;
+        }
+
+        li{
+            margin-top: 1.2rem;
         }
   }
 </style>
