@@ -70,5 +70,11 @@
       );
     }
   }
+
+  @container (min-width: 900px) {
+    .water-drup {
+      display: none;
+    }
+  }
   /* hoi test test */
 </style>

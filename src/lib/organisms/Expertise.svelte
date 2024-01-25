@@ -113,7 +113,7 @@
   }
 
   .card-item {
-    background-color: var(--white);
+    background-color: #fafafa;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 18px 30px -10px;
     width: 100%;
     padding: 1rem 0rem 0rem 0rem;
@@ -158,7 +158,6 @@
   p {
     font-size: 0.8rem;
     height: 6rem;
-    color: var(--darkblue);
   }
 
   .full {
@@ -174,7 +173,7 @@
     min-width: 100%;
   }
   .card-item:focus {
-    outline: 2px solid var(--darkblue);
+    outline: 1.5px solid rgb(206, 206, 206);
     outline-offset: 4px;
   }
   .card-item .green-link:focus {
@@ -206,7 +205,6 @@
     p {
       font-size: 0.9rem;
       height: 4.5rem;
-      color: var(--darkblue);
     }
   }
 </style>

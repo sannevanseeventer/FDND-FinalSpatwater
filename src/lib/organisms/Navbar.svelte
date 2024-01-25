@@ -58,11 +58,11 @@
       <li><a href="/projecten" aria-label="Projecten">Projecten</a></li>
       <li><a href="/kaart" aria-label="Kansenkaart">Kansenkaart</a></li>
       <li><a href="/#contact" aria-label="Contact"><span>Contact</span></a></li>
-      <li>
+      <!-- <li>
         <button class="contrast-toggle">
           <span>Toggle contrast</span>
         </button>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>
@@ -75,12 +75,12 @@
   /* Navigation */
   nav {
     width: 100vw;
-    height: auto;
+    height: fit-content;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-    position: fixed;
     z-index: 99999;
+    position: fixed;
     font-weight: 500;
-    background-color: var(--white);
+    background-color: #fff;
   }
 
   nav ul {
@@ -88,7 +88,7 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: var(--white);
+    background-color: #fff;
   }
 
   nav li a {
@@ -130,7 +130,7 @@
   }
 
   nav .menu-icon .bars {
-    background: var(--darkblue);
+    background: #333;
     display: block;
     height: 2px;
     position: relative;
@@ -140,7 +140,7 @@
 
   nav .menu-icon .bars:before,
   .menu-icon .bars:after {
-    background: var(--darkblue);
+    background: #333;
     content: "";
     display: block;
     height: 100%;
@@ -163,12 +163,13 @@
   }
 
   nav .menu-button:checked ~ .menu {
-    height: fit-content;
     padding-bottom: 1rem;
     width: 40%;
+    height: 100vh;
     margin-left: 60%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.423);
-    border-radius: 0rem 0rem 0rem 1rem;
+    /* border-radius: 0rem 0rem 0rem 1rem;
+    height: fit-content; */
     position: absolute;
   }
 
@@ -210,7 +211,7 @@
 
   nav li a:focus {
     background-color: var(--darkblue);
-    color: var(--white);
+    color: white;
   }
 
   nav .menu-button:focus {
@@ -220,7 +221,7 @@
 
   nav .menu li a:focus {
     background-color: var(--darkblue);
-    color: var(--white);
+    color: white;
   }
 
   nav .menu-icon:focus {
@@ -282,6 +283,12 @@
 
   /* 48em = 768px */
   @container (min-width: 900px) {
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
     nav li {
       float: left;
     }

@@ -42,7 +42,6 @@
     position: absolute;
     bottom: 0;
     margin-top: 2rem;
-    color: var(--white);
   }
 
   .inner-section {
