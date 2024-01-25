@@ -13,11 +13,16 @@
           <a class="green-link" href="/kennisbank">Bekijk onze blog pagina</a>
         </div>
         <div class="image-container">
-          <img src={item.image.url} alt="boom illustratie" loading="lazy"/>
+          <img src={item.image.url} alt="boom illustratie" loading="lazy" />
         </div>
       </div>
     </div>
-    <img class="wave-bottom" src="/assets/gray-wave-bottom.svg" alt="" loading="lazy">
+    <img
+      class="wave-bottom"
+      src="/assets/gray-wave-bottom.svg"
+      alt=""
+      loading="lazy"
+    />
   </section>
 {/each}
 
@@ -32,12 +37,13 @@
   }
 
   .wave-bottom {
-		width: 100%;
-		height: auto;
-		position: absolute;
-		bottom: 0;
-		margin-top: 2rem;
-	}
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    margin-top: 2rem;
+    color: var(--white);
+  }
 
   .inner-section {
     width: 70%;
@@ -58,6 +64,7 @@
 
   p {
     margin-bottom: 1rem !important;
+    color: var(--darkblue);
   }
 
   .image-container {
@@ -70,22 +77,21 @@
     margin: 0;
     width: 100%;
   }
- /* Focus-styling */
- .climate-container:focus {
-    outline: 2px solid var(--darkblue); 
+  /* Focus-styling */
+  .climate-container:focus {
+    outline: 2px solid var(--darkblue);
     outline-offset: 4px;
- }
-
+  }
 
   .climate-container:focus {
-    background-color: var(--darkblue); 
-    color: white; 
+    background-color: var(--darkblue);
+    color: white;
   }
-  
+
   /* Voeg focus-styling toe aan de link binnen de sectie */
   .climate-container a.green-link:focus {
-    outline: 2px solid var(--darkblue); 
-    outline-offset: 4px; 
+    outline: 2px solid var(--darkblue);
+    outline-offset: 4px;
   }
 
   /* Mobiele weergaven */

@@ -88,6 +88,7 @@
 
   body {
     position: relative;
+    background-color: var(--white);
   }
 
   :root {
@@ -106,7 +107,7 @@
       --darkblue: #ebebeb;
       --darkgrey: #ebebeb;
       --middlegrey: #f2f2f2;
-      --white: #2e4161;
+      --white: #fff;
     }
   }
 
@@ -116,7 +117,7 @@
     --darkblue: #ebebeb;
     --darkgrey: #ebebeb;
     --middlegrey: #f2f2f2;
-    --white: #2e4161;
+    --white: #233a53;
   }
 
   main {
@@ -136,13 +137,14 @@
   p {
     margin-bottom: 1rem;
     max-width: 40rem;
+    text-color; var(--darkblue);
   }
 
   /* link styling */
   .green-link {
     display: inline-block;
     background-color: var(--green);
-    color: var(--white-color);
+    color: var(--white);
     padding: 0.7rem 1rem;
     border-radius: 5px;
     font-weight: var(--font-semi-bold);
@@ -150,7 +152,7 @@
   }
 
   a.green-link {
-    color: white;
+    color: var(--white);
     text-decoration: none;
   }
 
@@ -188,7 +190,7 @@
 
   /* Category colors  */
   .Klimaatadaptatie {
-    background-color: #4ecd5d3f;
+    background-color: var(--darkgreen);
     border: solid 1px var(--green);
   }
 

@@ -12,7 +12,11 @@
 
 <section>
   <h1>Kennisbank</h1>
-  <p>In onze Kennisbank delen we niet alleen inzichten, maar bieden we ook concrete handelingsperspectieven. SPATwater gelooft in het verenigen van expertise met creatieve en praktische oplossingen.</p>
+  <p>
+    In onze Kennisbank delen we niet alleen inzichten, maar bieden we ook
+    concrete handelingsperspectieven. SPATwater gelooft in het verenigen van
+    expertise met creatieve en praktische oplossingen.
+  </p>
   <div class="horizontal-flex-row">
     <div class="last-posts-container">
       <article class="highlighted-post-1 post">

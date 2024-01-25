@@ -18,7 +18,10 @@
     {#each data.partner as partner}
       <div class="card-item">
         <a href={partner.link}>
-          <div class="partner-image" style="background-image: url('{partner.image.url}')"></div>
+          <div
+            class="partner-image"
+            style="background-image: url('{partner.image.url}')"
+          ></div>
         </a>
       </div>
     {/each}
@@ -30,6 +33,10 @@
     width: 70%;
     margin-left: 15%;
     margin-top: 4rem;
+  }
+
+  p {
+    color: var(--darkblue);
   }
 
   .inner-section {
@@ -48,7 +55,7 @@
     width: 10%;
     height: 10rem;
     margin-bottom: -5rem;
-    opacity: .5;
+    opacity: 0.5;
   }
 
   .partner-image {
@@ -65,7 +72,7 @@
   .card-item:focus-within .partner-image {
     outline: 4px solid var(--darkblue);
     /* opacity: -1; */
-      /* outline-offset: 4px red; */
+    /* outline-offset: 4px red; */
   }
   /* Mobiele weergaven */
   @media only screen and (max-width: 1100px) {

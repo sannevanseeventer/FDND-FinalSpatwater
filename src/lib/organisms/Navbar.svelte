@@ -80,7 +80,7 @@
     position: fixed;
     z-index: 99999;
     font-weight: 500;
-    background-color: #fff;
+    background-color: var(--white);
   }
 
   nav ul {
@@ -88,7 +88,7 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    background-color: var(--white);
   }
 
   nav li a {
@@ -130,7 +130,7 @@
   }
 
   nav .menu-icon .bars {
-    background: #333;
+    background: var(--darkblue);
     display: block;
     height: 2px;
     position: relative;
@@ -140,7 +140,7 @@
 
   nav .menu-icon .bars:before,
   .menu-icon .bars:after {
-    background: #333;
+    background: var(--darkblue);
     content: "";
     display: block;
     height: 100%;
@@ -210,7 +210,7 @@
 
   nav li a:focus {
     background-color: var(--darkblue);
-    color: white;
+    color: var(--white);
   }
 
   nav .menu-button:focus {
@@ -220,7 +220,7 @@
 
   nav .menu li a:focus {
     background-color: var(--darkblue);
-    color: white;
+    color: var(--white);
   }
 
   nav .menu-icon:focus {
