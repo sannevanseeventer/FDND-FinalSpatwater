@@ -1,42 +1,8 @@
 <script>
-  import { onMount } from "svelte";
-
   let name = "";
   let email = "";
   let subject = "";
   let message = "";
-
-  //   const handleSubmit = async (event) => {
-  //     event.preventDefault();
-
-  //     const formData = {
-  //       name,
-  //       email,
-  //       subject,
-  //       message,
-  //     };
-
-  //     try {
-  //       const response = await fetch("/api/submitForm", {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify(formData),
-  //       });
-
-  //       if (response.ok) {
-  //         const result = await response.json();
-  //         console.log(result.message); // Log success message
-  //         // You can add code here to show a success message to the user
-  //       } else {
-  //         throw new Error("Form submission failed.");
-  //       }
-  //     } catch (error) {
-  //       console.error("Error:", error);
-  //       // Handle error, show error message to the user, etc.
-  //     }
-  //   };
 </script>
 
 <!--==================== CONTACT FORM ====================-->
@@ -87,7 +53,7 @@
     required
   />
 
-  <input class="green-link no-border" type="submit" value="Versturen" />
+  <input class="green-link no-border" style="color: #fff;" type="submit" value="Versturen" />
 </form>
 
 <style>
@@ -97,7 +63,7 @@
 
   .field {
     width: 100%;
-    border: 1px solid var(--darkgrey);
+    border: 1px solid #d5d5d5;
     padding: 0.4rem 0.5rem;
     border-radius: 0.5rem;
     margin: 0.5rem 0rem 1rem 0rem;
@@ -105,7 +71,6 @@
 
   .no-border {
     border: none;
-    color: var(--white);
     text-decoration: none;
     cursor: pointer;
   }
