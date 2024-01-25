@@ -152,6 +152,7 @@
     p {
         font-size: .8rem;
         height: 6rem;
+    
     }
 
     .full {
@@ -167,7 +168,7 @@
         min-width: 100%;
     }
     .card-item:focus {
-    outline: 2px solid var(--darkblue);
+    outline: 1.5px solid rgb(206, 206, 206);
     outline-offset: 4px;
 }
 .card-item .green-link:focus {
