@@ -173,7 +173,7 @@
     }
 
     a{
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
 
     .row-1{
