@@ -7,6 +7,7 @@
 
 <!--==================== CONTACT FORM ====================-->
 <form action="https://api.web3forms.com/submit" method="POST">
+  <!-- Maak op web3forms een nieuwe access key aan en vul die in -->
   <input
     type="hidden"
     name="access_key"
@@ -53,7 +54,12 @@
     required
   />
 
-  <input class="green-link no-border" style="color: #fff;" type="submit" value="Versturen" />
+  <input
+    class="green-link no-border"
+    style="color: #fff;"
+    type="submit"
+    value="Versturen"
+  />
 </form>
 
 <style>
