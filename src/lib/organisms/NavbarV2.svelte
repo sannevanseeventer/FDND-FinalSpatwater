@@ -72,9 +72,9 @@
     <span id="menu-icon-x" class="menu-icon" style="display: none;"
       ><img src="/assets/xmark-large-svgrepo-com.svg" alt="" /></span
     >
-    <li>
+    <!-- <li>
       <button class="contrast-toggle"><span>Toggle contrast</span></button>
-    </li>
+    </li> -->
   </ul>
 </nav>
 
