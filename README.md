@@ -4,27 +4,19 @@
 ## Beschrijving 📃
 Ontwerp en ontwikkel een complexe, gebruiksvriendelijke en interactieve webapplicatie op basis van een bestaande api of een zelf in te richten headless CMS
 
-![mockup3](https://github.com/sannevanseeventer/SPATwater-2.0/assets/112857444/e668acea-201f-4391-be72-2eb91ce4367d)
-
+![mockup-SPAT](https://github.com/sannevanseeventer/FDND-FinalSpatwater/assets/112857444/714046c9-ba8d-4f60-894e-af34f3fc7035)
 
 
 ## Inhoudsopgave
 
   * [Beschrijving📃](#beschrijving)
-  * [Gebruik👥](#gebruik)
   * [Kenmerken✅](#kenmerken)
   * [Installatie⚙️](#installatie)
   * [Bronnen🌐](#bronnen)
   * [Licentie](#licentie)
     
-##  Gebruik  👥
-
-<!-- Voeg een link toe naar Github Pages 🌐-->
-
 
 ## Kenmerken ✅
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-
 
 **TOOLS 🧰:**
 * VSCode
