@@ -1,77 +1,64 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="../assets/SPAT_Logo_zondertekst.png" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Spatwater" />
 
-    <title>SPATwater - Een nieuwe generatie hydrologen</title>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="../assets/SPAT_Logo_zondertekst.png" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="Spatwater" />
 
-    %sveltekit.head%
+  <title>SPATwater - Een nieuwe generatie hydrologen</title>
 
-    <!--=============== REMIXICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
+  %sveltekit.head%
 
-    <!--=============== GOOGLE ICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="../assets/swiper-bundle.min.css" />
+  <!--=============== GOOGLE ICONS ===============-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <!--=============== SWIPER JS ===============-->
-    <!-- <script src="/static/assets/swiper-bundle.min.js"></script> -->
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="../assets/swiper-bundle.min.css" />
 
-    <!--=============== LEAFLET JS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-      crossorigin=""
-    ></script>
-  </head>
+  <!--=============== SWIPER JS ===============-->
+  <!-- <script src="/static/assets/swiper-bundle.min.js"></script> -->
 
-  <body data-sveltekit-preload-data="hover">
-    <!-- preloader section -->
-    <div class="preloader">
-      <div class="sp-loading sp-loading-circle">
-        <div class="spinner-circle1 spinner-circle"></div>
-        <div class="spinner-circle2 spinner-circle"></div>
-        <div class="spinner-circle3 spinner-circle"></div>
-        <div class="spinner-circle4 spinner-circle"></div>
-        <div class="spinner-circle5 spinner-circle"></div>
-        <div class="spinner-circle6 spinner-circle"></div>
-        <div class="spinner-circle7 spinner-circle"></div>
-        <div class="spinner-circle8 spinner-circle"></div>
-        <div class="spinner-circle9 spinner-circle"></div>
-        <div class="spinner-circle10 spinner-circle"></div>
-        <div class="spinner-circle11 spinner-circle"></div>
-        <div class="spinner-circle12 spinner-circle"></div>
-      </div>
+  <!--=============== LEAFLET JS ===============-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+</head>
+
+<body data-sveltekit-preload-data="hover">
+  <!-- preloader section -->
+  <div class="preloader">
+    <div class="sp-loading sp-loading-circle">
+      <div class="spinner-circle1 spinner-circle"></div>
+      <div class="spinner-circle2 spinner-circle"></div>
+      <div class="spinner-circle3 spinner-circle"></div>
+      <div class="spinner-circle4 spinner-circle"></div>
+      <div class="spinner-circle5 spinner-circle"></div>
+      <div class="spinner-circle6 spinner-circle"></div>
+      <div class="spinner-circle7 spinner-circle"></div>
+      <div class="spinner-circle8 spinner-circle"></div>
+      <div class="spinner-circle9 spinner-circle"></div>
+      <div class="spinner-circle10 spinner-circle"></div>
+      <div class="spinner-circle11 spinner-circle"></div>
+      <div class="spinner-circle12 spinner-circle"></div>
     </div>
-    <div style="display: contents">%sveltekit.body%</div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Hide the loader when the page is done loading
-        document.querySelector(".preloader").style.display = "none";
-      });
-    </script>
-  </body>
+  </div>
+  <div style="display: contents">%sveltekit.body%</div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Hide the loader when the page is done loading
+      document.querySelector(".preloader").style.display = "none";
+    });
+  </script>
+</body>
+
 </html>
 
 <style>
@@ -137,14 +124,14 @@
   p {
     margin-bottom: 1rem;
     max-width: 40rem;
-    text-color; var(--darkblue);
+    color: var(--darkblue);
   }
 
   /* link styling */
   .green-link {
     display: inline-block;
     background-color: var(--green);
-    color: var(--white);
+    color: #fff !important;
     padding: 0.7rem 1rem;
     border-radius: 5px;
     font-weight: var(--font-semi-bold);
@@ -152,7 +139,7 @@
   }
 
   a.green-link {
-    color: var(--white);
+    color: #fff !important;
     text-decoration: none;
   }
 
@@ -367,10 +354,11 @@
       padding-left: 0rem;
     }
 
-    .wave, .wave-bottom {
+    .wave,
+    .wave-bottom {
       display: none;
     }
-    
+
     .water-drup {
       display: none;
     }
