@@ -38,7 +38,6 @@
     @media only screen and (max-width: 1100px) {
         aside {
             width: 90%;
-            height: 65%;
         }
     }
 </style>

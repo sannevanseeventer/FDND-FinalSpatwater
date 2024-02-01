@@ -110,14 +110,4 @@
     a {
         text-decoration: none;
     }
-
-    /* Mobiele weergaven */
-    @media only screen and (max-width: 1100px) {
-        .project-list-container {
-            height: calc(60vh - 1rem);
-            overflow-y: scroll;
-            overflow-x: hidden;
-            /* padding-right: .5rem; */
-        }
-    }
 </style>
