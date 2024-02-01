@@ -13,6 +13,8 @@
         zoom: 10,
         minZoom: 10,
         scrollWheelZoom: false
+        // Disable dragging on mobile devices
+        dragging: !L.Browser.mobile
         });
 
         // Define a custom icon
