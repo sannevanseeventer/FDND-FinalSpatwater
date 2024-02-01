@@ -4,7 +4,7 @@ import { hygraph } from '$lib/utils/hygraph.js'
 export async function load() {
   let query = gql`
     query SPATquery {
-      projectens {
+      projectens(first: 100) {
         categorie
         createdAt
         intro
