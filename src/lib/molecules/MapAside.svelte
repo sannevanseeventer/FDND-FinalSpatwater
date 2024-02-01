@@ -104,4 +104,16 @@
         width: 50%;
         text-align: right;
     }
+
+    @media only screen and (max-width: 1100px) {
+        aside {
+            height: 50vh;
+        }
+
+        .hide {
+            right: 0;
+            bottom: 0;
+            padding-bottom: calc(20vh + 1rem);
+        }
+    }
 </style>
